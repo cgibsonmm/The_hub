@@ -28,15 +28,16 @@
 
 ![Image of Mobile Site](https://res.cloudinary.com/drdk7a56d/image/upload/v1569940129/Screen_Shot_2019-10-01_at_9.10.59_AM_l2s7n1.png)
 
-### MVP/PostMVP
+### MVP
 - the app will display a list of stories to a landing page based on API return data
 - the user will be able to filter and search for diffrent typs of social media such as videos, tweet or reddit posts
 - the app will have a mobile first responsive design
-- add react-spring and react overdrive for animations and better styling
+
 
 ### Post MVP
 - Add a news api to allow for news and social feed
 - Be able to allow users to save prefrences based in local storage
+- Add react-spring and react overdrive for animations and better styling
 
 
 ### React Component Hierarchy
@@ -65,8 +66,13 @@
 
 | Component | Description | 
 | --- | :---: |  
-| Story List | Houses all retured story data in a list | 
-| Search Input | takes user input and will fire new requests for data, this response will change the story list to reflect the changes | 
+| Header | Houses nav and search |
+| Search Input | takes user input and will fire new requests for data, this response will change the story list to reflect the changes |
+| Link | Misc links to move through the site or to outside site|
+| Story List | A list of Stories |
+| Story | Either a Reddit, Youtube, or twitter post |
+| Story Image | Iframe or image from story |
+| Story Data | Hold text from the story |
 
 ### Additional Libraries
 - font-awesome
