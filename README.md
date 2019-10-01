@@ -1,18 +1,32 @@
-# Project Overview
+# The Hub
+
+### .The Hub is your place for social media information. The single place needed to view all of your most important media content in one central location.
 
 
-## Project Description
+| Component | Priority | Estimated Time | Time Invetsted | Actual Time |
+| --- | :---: |  :---: | :---: | :---: |
+| Basic Styling | H | 3hrs| 0 | 0 |
+| Working with API | H | 4hrs| 0 | 0 |
+| Building Component Tree | H | 2hrs | 0 | 0 |
+| Working page updates | H | 2.5 hrs | 0 | 0 |
+| Writing Filter Code | H | 2hrs | 0 | 0 |
+| MK2 styling | H | 4hrs | 0 | 0 |
+| Total | H | 18hrs?  | 0 | 0 |
 
-Use this section to describe your final project and perhaps any links to relevant sites that help convey the concept and\or functionality.
 
-## Wireframes
-
-Upload images of wireframe to cloudinary and add the link here with a description of the specific wireframe.
 
 ## API Snippet
 
-```
-Paste a snippet from your API here that shows the shape of the data
+```JSON
+
+  "kind": "youtube#searchListResponse",
+  "etag": "\"p4VTdlkQv3HQeTEaXgvLePAydmU/_RVMLF-zWQ3W8zB_wX2kw1vu0ZU\"",
+  "nextPageToken": "CBkQAA",
+  "regionCode": "US",
+  "pageInfo": {
+    "totalResults": 1000000,
+    "resultsPerPage": 25
+  },
 ```
 
 ### MVP/PostMVP - 5min
@@ -20,22 +34,19 @@ Paste a snippet from your API here that shows the shape of the data
 The functionality will then be divided into two separate lists: MPV and PostMVP.  Carefully decided what is placed into your MVP as the client will expect this functionality to be implemented upon project completion.  
 
 #### MVP EXAMPLE
-- Find and use external api 
-- Render data on page 
-- Allow user to choose favorites 
-- Save their choices in firebase
+- return 3 apis
+- filter and Render data on page
+- Allow user to search for data via keyword
 
-#### PostMVP EXAMPLE
-
-- Add user auth
 
 ## React Component Hierarchy
 
-Define the the React components and the architectural design of your app.
+App>Header>Nav>Links
+   |          >Search
+   >Main>viewport>ItemList>Item>ItemThumbnail>
+   	>Sidebar>Links
+   >Footer>Links
 
-## Priority Matrix
-
-Add in a picture of your Priority Matrix
 
 ## Functional Components
 ##### Writing out your components and its descriptions isn't a required part of the proposal but can be helpful.
@@ -50,11 +61,6 @@ Based on the initial logic defined in the previous sections try and breakdown th
 
 Time frames are also key in the development cycle.  You have limited time to code all phases of the game.  Your estimates can then be used to evalute game possibilities based on time needed and the actual time you have before game must be submitted. It's always best to pad the time by a few hours so that you account for the unknown so add and additional hour or two to each component to play it safe. Also, put a gif at the top of your Readme before you pitch, and you'll get a panda prize.
 
-| Component | Priority | Estimated Time | Time Invetsted | Actual Time |
-| --- | :---: |  :---: | :---: | :---: |
-| Adding Form | H | 3hrs| 3.5hrs | 3.5hrs |
-| Working with API | H | 3hrs| 2.5hrs | 2.5hrs |
-| Total | H | 6hrs| 5hrs | 5hrs |
 
 
 ## Additional Libraries
@@ -76,24 +82,4 @@ function reverse(string) {
 #### SAMPLE.....
 **ERROR**: app.js:34 Uncaught SyntaxError: Unexpected identifier                                
 **RESOLUTION**: Missing comma after first object in sources {} object
-
-
-
-
-# The Hub
-
-### .The Hub is your place for social media information. The single place needed to view all of your most important media content in one central location.
-
-
-| Component | Priority | Estimated Time | Time Invetsted | Actual Time |
-| --- | :---: |  :---: | :---: | :---: |
-| Basic Styling | H | 3hrs| 0 | 0 |
-| Working with API | H | 4hrs| 0 | 0 |
-| Building Component Tree | H | 2hrs | 0 | 0 |
-| Working page updates | H | 2.5 hrs | 0 | 0 |
-| Writing Filter Code | H | 2hrs | 0 | 0 |
-| MK2 styling | H | 4hrs | 0 | 0 |
-| Total | H | 18hrs?  | 0 | 0 |
-
-
 
