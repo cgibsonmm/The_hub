@@ -7,12 +7,13 @@
 
 | Component | Priority | Estimated Time | Time Invetsted | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| Basic Styling | H | 3hrs| 0 | 0 |
+| Basic Styling | H | 4hrs| 0 | 0 |
 | Working with API | H | 4hrs| 0 | 0 |
-| Building Component Tree | H | 2hrs | 0 | 0 |
-| Working page updates | H | 2.5 hrs | 0 | 0 |
-| Writing Filter Code | H | 2hrs | 0 | 0 |
+| Building Component Tree | H | 3hrs | 0 | 0 |
+| Working page updates | H | 3 hrs | 0 | 0 |
+| Writing Filter Code | H | 3hrs | 0 | 0 |
 | MK2 styling | H | 4hrs | 0 | 0 |
+| Basic animations | H | 3hrs | 0 | 0 |
 | Total | H | 24hrs | 0 | 0 |
 
 
@@ -32,6 +33,10 @@
   
 ```
 
+![Image of Full Site](https://res.cloudinary.com/drdk7a56d/image/upload/v1569940125/Screen_Shot_2019-10-01_at_9.10.47_AM_ysghni.png)
+
+![Image of Mobile Site](https://res.cloudinary.com/drdk7a56d/image/upload/v1569940129/Screen_Shot_2019-10-01_at_9.10.59_AM_l2s7n1.png)
+
 ### MVP/PostMVP
 
 - Be able to allow users to save prefrences based in local storage
@@ -48,15 +53,10 @@
 
 
 ## React Component Hierarchy
-````
-App>Header>Nav>Links
-   |          >Search
-   |
-   >Main>viewport>StoryList>Story>StoryText>StoryImage>
-   |	>Sidebar>Links
-   |
-   >Footer>Links
-   ````
+
+
+![Component Tree](https://res.cloudinary.com/drdk7a56d/image/upload/v1569940131/Screen_Shot_2019-10-01_at_10.11.35_AM_aibmvb.png)
+
 
 
 ## Functional Components
@@ -72,12 +72,4 @@ Search input
 - Axios
 - react-spring
 - react overdrive
-
-
-## Issues and Resolutions
- Use this section to list of all major issues encountered and their resolution.
-
-#### SAMPLE.....
-**ERROR**: app.js:34 Uncaught SyntaxError: Unexpected identifier                                
-**RESOLUTION**: Missing comma after first object in sources {} object
 
