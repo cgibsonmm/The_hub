@@ -68,7 +68,7 @@ Search input
 
 ## Additional Libraries
 - font-awesome
-- Matrilize
+- Materialize
 - Axios
 - react-spring
 - react overdrive
