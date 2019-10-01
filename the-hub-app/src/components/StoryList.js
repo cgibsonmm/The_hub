@@ -16,8 +16,8 @@ const StoryList = (props) => {
   return (
     <ul>
       {
-        props.youtubeRes && props.youtubeRes.map((video, index) => {
-          return <YouTube videoId={video.id.videoId} opts={opts} />
+        props.youtubeRes && props.youtubeRes.map(video => {
+          return <YouTube videoId={video.id.videoId} opts={opts} key={video.id.videoId} />
         })
       }
     </ul >

@@ -6,10 +6,8 @@ import Axios from 'axios'
 import './App.css';
 
 
-
 const KEY = '&key=AIzaSyCuLFiDzDJdu67ORKCdrNijn4xKRCtSE6k'
 const youTubeUrl = 'https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=10&q='
-
 
 function App() {
   const URL = `${youTubeUrl}javascript${KEY}`;
