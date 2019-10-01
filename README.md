@@ -1,6 +1,17 @@
-#### The Hub
+# The Hub
 
 ### .The Hub is your place for social media information. The single place needed to view all of your most important media content in one central location.
+
+
+| Component | Priority | Estimated Time | Time Invetsted | Actual Time |
+| --- | :---: |  :---: | :---: | :---: |
+| Basic Styling | H | 3hrs| 0 | 0 |
+| Working with API | H | 4hrs| 0 | 0 |
+| Building Component Tree | H | 2hrs | 0 | 0 |
+| Working page updates | H | 2.5 hrs | 0 | 0 |
+| Writing Filter Code | H | 2hrs | 0 | 0 |
+| MK2 styling | H | 4hrs | 0 | 0 |
+| Total | H | 18hrs?  | 0 | 0 |
 
 
 
