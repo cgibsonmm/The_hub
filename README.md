@@ -1,6 +1,8 @@
 # The Hub
 
-### .The Hub is your place for social media information. The single place needed to view all of your most important media content in one central location.
+### The Hub is your place for social media information. The single place needed to view all of your most important media content in one central location.
+
+####Using Youtube, Twitter, and Reddit APIs the app will gather a hub of tech related information. The Hub provides you with all of your nessasary information all in one place. Users will be able to search and filter data based off of their filter prfrences.
 
 
 | Component | Priority | Estimated Time | Time Invetsted | Actual Time |
