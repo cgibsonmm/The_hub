@@ -3,6 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "codebird": "^2.6.0",
+    "express": "^4.17.1",
     "i": "^0.3.6",
     "npm": "^6.11.3",
     "react": "^16.10.1",
@@ -10,9 +12,11 @@
     "react-materialize": "^3.4.1",
     "react-scripts": "3.1.2",
     "react-twitter-auth": "0.0.13",
+    "react-youtube": "^7.9.0",
     "twit": "^2.2.11",
     "twitter": "^1.7.1",
-    "twitter-node-client": "0.0.6"
+    "twitter-node-client": "0.0.6",
+    "youtube-iframe": "^1.0.3"
   },
   "scripts": {
     "start": "react-scripts start",
