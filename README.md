@@ -2,8 +2,11 @@
 
 ### The Hub is your place for social media information. The single place needed to view all of your most important media content in one central location.
 
-#### Using Youtube, Twitter, and Reddit APIs the app will gather a hub of tech related information. The Hub provides you with all of your nessasary information all in one place. Users will be able to search and filter data based off of their filter prfrences.
+##### Using Youtube, Twitter, and Reddit APIs the app will gather a hub of tech related information. The Hub provides you with all of your nessasary information all in one place. Users will be able to search and filter data based off of their filter prfrences.
 
+
+
+### Time To Complete
 
 | Component | Priority | Estimated Time | Time Invetsted | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
@@ -18,7 +21,32 @@
 
 
 
-## API Snippet
+
+### Wire Frame
+
+![Image of Full Site](https://res.cloudinary.com/drdk7a56d/image/upload/v1569940125/Screen_Shot_2019-10-01_at_9.10.47_AM_ysghni.png)
+
+![Image of Mobile Site](https://res.cloudinary.com/drdk7a56d/image/upload/v1569940129/Screen_Shot_2019-10-01_at_9.10.59_AM_l2s7n1.png)
+
+### MVP/PostMVP
+- the app will display a list of stories to a landing page based on API return data
+- the user will be able to filter and search for diffrent typs of social media such as videos, tweet or reddit posts
+- the app will have a mobile first responsive design
+- add react-spring and react overdrive for animations and better styling
+
+### Post MVP
+- Add a news api to allow for news and social feed
+- Be able to allow users to save prefrences based in local storage
+
+
+### React Component Hierarchy
+
+
+![Component Tree](https://res.cloudinary.com/drdk7a56d/image/upload/v1569940131/Screen_Shot_2019-10-01_at_10.11.35_AM_aibmvb.png)
+
+
+
+### API Snippet
 
 ```JSON
 {
@@ -33,40 +61,14 @@
   
 ```
 
-![Image of Full Site](https://res.cloudinary.com/drdk7a56d/image/upload/v1569940125/Screen_Shot_2019-10-01_at_9.10.47_AM_ysghni.png)
+### Functional Components
 
-![Image of Mobile Site](https://res.cloudinary.com/drdk7a56d/image/upload/v1569940129/Screen_Shot_2019-10-01_at_9.10.59_AM_l2s7n1.png)
+| Component | Description | 
+| --- | :---: |  
+| Story List | Houses all retured story data in a list | 
+| Search Input | takes user input and will fire new requests for data, this response will change the story list to reflect the changes | 
 
-### MVP/PostMVP
-
-- Be able to allow users to save prefrences based in local storage
-- Add a news api to allow for news and social feed
-- add react-spring and react overdrive for animations and better styling
-
-
-
-
-#### MVP EXAMPLE
-- display styled rretured Stories to a landing page
-- filter for diffrent stories 
-- Allow user to search for data via keyword
-
-
-## React Component Hierarchy
-
-
-![Component Tree](https://res.cloudinary.com/drdk7a56d/image/upload/v1569940131/Screen_Shot_2019-10-01_at_10.11.35_AM_aibmvb.png)
-
-
-
-## Functional Components
-Story List
- - Houses all retured items in a list
-Search input
- - takes user input and will fire new requests for data, this response will change the story list to reflect the changes.
-
-
-## Additional Libraries
+### Additional Libraries
 - font-awesome
 - Materialize
 - Axios
