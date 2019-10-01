@@ -10,18 +10,30 @@ const KEY = '&key=AIzaSyCuLFiDzDJdu67ORKCdrNijn4xKRCtSE6k'
 const youTubeUrl = 'https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=10&q='
 
 function App() {
-  const URL = `${youTubeUrl}javascript${KEY}`;
+  let URL = `${youTubeUrl}javascript${KEY}`;
+  const [input, setInput] = useState('')
   const [youtubeRes, setYoutubeRes] = useState([])
   const [currentYTUrl, setCurrentYTUrl] = useState(URL)
 
   useEffect(() => {
-    Axios.get(URL).then(res => {
+    Axios.get(currentYTUrl).then(res => {
       setYoutubeRes(res.data.items)
     })
-  }, [URL])
+  }, [currentYTUrl])
+
+
+  const handleSearchInput = () => {
+    URL = `${youTubeUrl}${input}${KEY}`
+    setCurrentYTUrl(URL)
+  }
+
+  const handleInput = (formInput) => {
+    setInput(formInput)
+  }
+
   return (
     <div className="App">
-      <Header />
+      <Header handleSearchSubmit={handleSearchInput} handleInput={handleInput} />
       <Main youtubeRes={youtubeRes} />
       <Footer />
     </div>
