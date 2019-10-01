@@ -1,3 +1,11 @@
+#### The Hub
+
+### .The Hub is your place for social media information. The single place needed to view all of your most important media content in one central location.
+
+
+
+
+
 # ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Project 2: React
 #### Overview
 
