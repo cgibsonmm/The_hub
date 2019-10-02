@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { BrowserRouter as Router, Switch, Route, useRouteMatch } from 'react-router-dom'
 import Header from './components/Header'
 import Main from './components/Main'
 import Footer from './components/Footer'
@@ -9,7 +10,6 @@ import './App.css';
 
 const KEY = '&key=AIzaSyCuLFiDzDJdu67ORKCdrNijn4xKRCtSE6k'
 const youTubeUrl = 'https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=10&q='
-// const RedditUrl = "https://www.reddit.com/r/upliftingnews.json?raw_json=1&limit=10"
 const RedditUrl = 'https://www.reddit.com/subreddits/search.json?q='
 const ageGate = '&limit=10'
 
@@ -45,6 +45,11 @@ function App() {
     })
   }
 
+  const trending = () => {
+    URL = `https://www.googleapis.com/youtube/v3/videos?part=contentDetails&chart=mostPopular&regionCode=US${KEY}`
+    setCurrentYTUrl(`${URL}`)
+  }
+
   const handleSearchInput = () => {
     URL = `${youTubeUrl}${input}${KEY}`
     redditURL = `${RedditUrl}${input}`
@@ -56,13 +61,29 @@ function App() {
     setInput(formInput)
   }
 
+
   return (
     <div className="App">
       <Header handleSearchSubmit={handleSearchInput} handleInput={handleInput} />
-      <Main redditRes={redditRes} youtubeRes={youtubeRes} />
+      <Switch>
+        <Route exact path='/'>
+          <Main redditRes={redditRes} youtubeRes={youtubeRes} />
+        </Route>
+        <Route exact path='/trending' render={() => {
+          trending()
+          return <Main redditRes={redditRes} youtubeRes={youtubeRes} />
+        }} />
+        />
+      </Switch>
       <Footer />
     </div>
   );
 }
 
-export default App;
+export default () => {
+  return (
+    <Router>
+      <App />
+    </Router>
+  )
+}
