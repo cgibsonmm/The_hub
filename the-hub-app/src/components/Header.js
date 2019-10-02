@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useStyles } from 'react';
 import { Link, useHistory } from 'react-router-dom'
 import {
   Field,
@@ -40,16 +40,18 @@ const Header = ({ handleInput, handleSearchSubmit }) => {
       <Navbar>
         <NavbarBrand>
           <NavbarItem>
-            <Link to='/'>The Hub</Link>
+            <Link to='/'><h1>The Hub</h1></Link>
           </NavbarItem>
           <NavbarBurger isActive={isActive} onClick={handleClick} />
         </NavbarBrand>
         <NavbarMenu isActive={isActive} onClick={handleClick}>
           <NavbarEnd>
-            <form onSubmit={handleSubmit}>
-              <Input onChange={handleChange} onClick={e => e.stopPropagation()} placeholder='search' />
-              <Button isColor='primary' type="submit">Search</Button>
-            </form>
+            <NavbarItem>
+              <form onSubmit={handleSubmit}>
+                <Input onChange={handleChange} onClick={e => e.stopPropagation()} placeholder='search' />
+                <Button isColor='primary' type="submit">Search</Button>
+              </form>
+            </NavbarItem>
           </NavbarEnd>
         </NavbarMenu>
       </Navbar>
