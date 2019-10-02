@@ -25,10 +25,10 @@ function App() {
     Axios.get(currentRedditUrl).then(res => {
       setRedditRes(res.data.data.children)
     }).catch(e => console.log(e.message))
-    Axios.get(currentYTUrl).then(res => {
-      setYoutubeRes(res.data.items)
-    }).catch(e => console.log(e.message)
-    )
+    // Axios.get(currentYTUrl).then(res => {
+    //   setYoutubeRes(res.data.items)
+    // }).catch(e => console.log(e.message)
+    // )
   }, [currentRedditUrl, currentYTUrl])
 
 
