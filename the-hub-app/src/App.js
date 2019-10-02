@@ -1,9 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
+import { Container, Columns, Column } from 'bloomer'
 import Header from './components/Header'
 import Main from './components/Main'
+import Sidebar from './components/Sidebar'
 import Footer from './components/Footer'
 import Axios from 'axios'
+import 'bulma/css/bulma.css'
 import './App.css';
 
 
@@ -25,10 +28,10 @@ function App() {
       console.log('hello')
       setRedditRes(filterRedditRes(res.data.data.children))
     }).catch(e => console.log(e.message))
-    Axios.get(currentYTUrl).then(res => {
-      setYoutubeRes(filterYouTubeRes(res.data.items))
-    }).catch(e => console.log(e.message)
-    )
+    // Axios.get(currentYTUrl).then(res => {
+    //   setYoutubeRes(filterYouTubeRes(res.data.items))
+    // }).catch(e => console.log(e.message)
+    // )
   }, [currentRedditUrl, currentYTUrl])
 
   const filterRedditRes = (data) => {
@@ -61,24 +64,30 @@ function App() {
 
   return (
     <div className="App">
-      {/* <Header handleSearchSubmit={handleSearchInput} handleInput={handleInput} /> */}
       <Header />
-      <Switch>
-        <Route exact path='/' render={() => {
-          fetchDefault()
-          return <Main redditRes={redditRes} youtubeRes={youtubeRes} />
-        }} />
-        <Route exact path='/search/:slug' render={({ match }) => {
-          fetchSearch(match.params.slug)
-          return <Main redditRes={redditRes} youtubeRes={youtubeRes} />
-        }} />
-        <Route exact path='/trending' render={() => {
-          trending()
-          return <Main redditRes={redditRes} youtubeRes={youtubeRes} />
-        }} />
-      </Switch>
+      <Columns>
+        <Column isSize='1/4'>
+          <Sidebar />
+        </Column >
+        <Column isSize='3/4'>
+          <Switch>
+            <Route exact path='/' render={() => {
+              fetchDefault()
+              return <Main redditRes={redditRes} youtubeRes={youtubeRes} />
+            }} />
+            <Route exact path='/search/:slug' render={({ match }) => {
+              fetchSearch(match.params.slug)
+              return <Main redditRes={redditRes} youtubeRes={youtubeRes} />
+            }} />
+            <Route exact path='/trending' render={() => {
+              trending()
+              return <Main redditRes={redditRes} youtubeRes={youtubeRes} />
+            }} />
+          </Switch>
+        </Column>
+      </Columns>
       <Footer />
-    </div>
+    </div >
   );
 }
 
