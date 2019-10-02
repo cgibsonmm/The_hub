@@ -1,22 +1,25 @@
-import React from 'react';
-import { Link } from 'react-router-dom'
+import React, { useState } from 'react';
+import { Link, useHistory } from 'react-router-dom'
 import TextField from '@material-ui/core/TextField'
 import Button from '@material-ui/core/Button'
+import { getThemeProps } from '@material-ui/styles';
 
 const Header = ({ handleInput, handleSearchSubmit }) => {
+  const [input, setInput] = useState('')
+  let history = useHistory()
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    handleSearchSubmit()
+    history.push(`/search/${input}`)
   }
 
   const handleChange = (e) => {
-    handleInput(e.target.value)
+    setInput(e.target.value)
   }
   return (
     <header>
       <nav>
-        <h1>The Hub</h1>
+        <h1><Link to='/'>The Hub</Link></h1>
         <Link to='/trending'>Trending</Link>
         <form onSubmit={handleSubmit}>
           <TextField onChange={handleChange} placeholder='search' />

@@ -7,7 +7,6 @@ import Axios from 'axios'
 import './App.css';
 
 
-
 const KEY = '&key=AIzaSyCuLFiDzDJdu67ORKCdrNijn4xKRCtSE6k'
 const youTubeUrl = 'https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=10&q='
 const RedditUrl = 'https://www.reddit.com/subreddits/search.json?q='
@@ -16,7 +15,7 @@ const ageGate = '&limit=10'
 function App() {
   let URL = `${youTubeUrl}javascript${KEY}`;
   let redditURL = `${RedditUrl}javascript${ageGate}`
-  const [input, setInput] = useState('')
+  // const [input, setInput] = useState('')
   const [youtubeRes, setYoutubeRes] = useState([])
   const [redditRes, setRedditRes] = useState([])
   const [currentYTUrl, setCurrentYTUrl] = useState(URL)
@@ -50,30 +49,44 @@ function App() {
     setCurrentYTUrl(`${URL}`)
   }
 
-  const handleSearchInput = () => {
-    URL = `${youTubeUrl}${input}${KEY}`
-    redditURL = `${RedditUrl}${input}`
-    setCurrentRedditUrl(redditURL)
-    setCurrentYTUrl(URL)
+  // const handleSearchInput = () => {
+  //   URL = `${youTubeUrl}${input}${KEY}`
+  //   redditURL = `${RedditUrl}${input}`
+  //   setCurrentRedditUrl(redditURL)
+  //   setCurrentYTUrl(URL)
+  // }
+
+  // const handleInput = (formInput) => {
+  //   setInput(formInput)
+  // }
+
+  const fetchSearch = (slug) => {
+    console.log(slug)
+    setCurrentYTUrl(`${youTubeUrl}${slug}${KEY}`)
   }
 
-  const handleInput = (formInput) => {
-    setInput(formInput)
+  const fetchDefault = () => {
+    setCurrentYTUrl(`${youTubeUrl}javascript${KEY}`)
   }
 
 
   return (
     <div className="App">
-      <Header handleSearchSubmit={handleSearchInput} handleInput={handleInput} />
+      {/* <Header handleSearchSubmit={handleSearchInput} handleInput={handleInput} /> */}
+      <Header />
       <Switch>
-        <Route exact path='/'>
-          <Main redditRes={redditRes} youtubeRes={youtubeRes} />
-        </Route>
+        <Route exact path='/' render={() => {
+          fetchDefault()
+          return <Main redditRes={redditRes} youtubeRes={youtubeRes} />
+        }} />
+        <Route exact path='/search/:slug' render={({ match }) => {
+          fetchSearch(match.params.slug)
+          return <Main redditRes={redditRes} youtubeRes={youtubeRes} />
+        }} />
         <Route exact path='/trending' render={() => {
           trending()
           return <Main redditRes={redditRes} youtubeRes={youtubeRes} />
         }} />
-        />
       </Switch>
       <Footer />
     </div>
