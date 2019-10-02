@@ -10,8 +10,6 @@ const opts = {
 }
 
 const Video = ({ video }) => {
-  console.log(video);
-
   return (
     <YouTube videoId={video.id.videoId} opts={opts} />
   )

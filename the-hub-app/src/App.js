@@ -6,31 +6,44 @@ import Axios from 'axios'
 import './App.css';
 
 
+
 const KEY = '&key=AIzaSyCuLFiDzDJdu67ORKCdrNijn4xKRCtSE6k'
 const youTubeUrl = 'https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=10&q='
 // const RedditUrl = "https://www.reddit.com/r/upliftingnews.json?raw_json=1&limit=10"
 const RedditUrl = 'https://www.reddit.com/subreddits/search.json?q='
+const ageGate = '&limit=10'
 
 function App() {
   let URL = `${youTubeUrl}javascript${KEY}`;
-  let redditURL = `${RedditUrl}javascript`
+  let redditURL = `${RedditUrl}javascript${ageGate}`
   const [input, setInput] = useState('')
   const [youtubeRes, setYoutubeRes] = useState([])
   const [redditRes, setRedditRes] = useState([])
   const [currentYTUrl, setCurrentYTUrl] = useState(URL)
   const [currentRedditUrl, setCurrentRedditUrl] = useState(redditURL)
 
-
   useEffect(() => {
     Axios.get(currentRedditUrl).then(res => {
-      setRedditRes(res.data.data.children)
+      setRedditRes(filterRedditRes(res.data.data.children))
     }).catch(e => console.log(e.message))
-    // Axios.get(currentYTUrl).then(res => {
-    //   setYoutubeRes(res.data.items)
-    // }).catch(e => console.log(e.message)
-    // )
+    Axios.get(currentYTUrl).then(res => {
+      setYoutubeRes(filterYouTubeRes(res.data.items))
+    }).catch(e => console.log(e.message)
+    )
   }, [currentRedditUrl, currentYTUrl])
 
+  const filterRedditRes = (data) => {
+    return data.filter(item => {
+      return item.data.over18 === false
+    })
+  }
+
+  const filterYouTubeRes = (data) => {
+    return data.filter(item => {
+      console.log(item);
+      return item.id.videoId
+    })
+  }
 
   const handleSearchInput = () => {
     URL = `${youTubeUrl}${input}${KEY}`
@@ -40,7 +53,6 @@ function App() {
   }
 
   const handleInput = (formInput) => {
-
     setInput(formInput)
   }
 

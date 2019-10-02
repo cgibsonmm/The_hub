@@ -26,3 +26,7 @@ nav form{
   display: flex;
   flex-wrap: wrap;
 }
+
+Card{
+  width: 100px; 
+}

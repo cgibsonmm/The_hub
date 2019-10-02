@@ -7,13 +7,13 @@ const StoryList = (props) => {
   return (
     <div id='story-list'>
       {
-        props.youtubeRes && props.youtubeRes.map((video, index) => {
-          return <Video video={video} key={index} />
+        props.youtubeRes && props.youtubeRes.map(video => {
+          return <Video video={video} key={video.id.videoId} />
         })
       }
       {
-        props.redditRes && props.redditRes.map(item => {
-          return <Reddit item={item} />
+        props.redditRes && props.redditRes.map((item, index) => {
+          return <Reddit item={item} key={index} />
         })
       }
     </div>
