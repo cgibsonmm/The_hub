@@ -5,12 +5,18 @@ import CardHeader from '@material-ui/core/CardHeader'
 import CardMedia from '@material-ui/core/CardMedia';
 import CardContent from '@material-ui/core/CardContent';
 import CardActions from '@material-ui/core/CardActions';
+import { whileStatement } from '@babel/types';
+import { NONAME } from 'dns';
 
 const useStyles = makeStyles(theme => ({
   card: {
     width: 375,
     height: 200,
-    background: 'rgb(12,24,50)'
+    background: 'rgb(12,24,50)',
+    color: 'white',
+  },
+  underline: {
+    textDecoration: 'none',
   }
 }))
 
@@ -21,7 +27,7 @@ const Reddit = ({ item }) => {
   const { data } = item
 
   return (
-    <a href={`https://reddit.com/${data.display_name_prefixed}`}>
+    <a className={classes.underline} href={`https://reddit.com/${data.display_name_prefixed}`}>
       <Card className={classes.card}>
         <h2>{data.display_name_prefixed}</h2>
         <h3>{data.header_title}</h3>
