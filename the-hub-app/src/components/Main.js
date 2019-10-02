@@ -4,7 +4,7 @@ import StoryList from './StoryList'
 
 const Main = ({ redditRes, youtubeRes }) => {
   return (
-    <main>
+    <main className='main'>
       <Sidebar />
       <StoryList redditRes={redditRes} youtubeRes={youtubeRes} />
     </main>

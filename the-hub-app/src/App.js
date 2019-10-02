@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { BrowserRouter as Router, Switch, Route, useRouteMatch } from 'react-router-dom'
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import Header from './components/Header'
 import Main from './components/Main'
 import Footer from './components/Footer'
@@ -15,7 +15,6 @@ const ageGate = '&limit=10'
 function App() {
   let URL = `${youTubeUrl}javascript${KEY}`;
   let redditURL = `${RedditUrl}javascript${ageGate}`
-  // const [input, setInput] = useState('')
   const [youtubeRes, setYoutubeRes] = useState([])
   const [redditRes, setRedditRes] = useState([])
   const [currentYTUrl, setCurrentYTUrl] = useState(URL)
@@ -23,6 +22,7 @@ function App() {
 
   useEffect(() => {
     Axios.get(currentRedditUrl).then(res => {
+      console.log('hello')
       setRedditRes(filterRedditRes(res.data.data.children))
     }).catch(e => console.log(e.message))
     Axios.get(currentYTUrl).then(res => {
@@ -39,7 +39,6 @@ function App() {
 
   const filterYouTubeRes = (data) => {
     return data.filter(item => {
-      console.log(item);
       return item.id.videoId
     })
   }
@@ -49,24 +48,14 @@ function App() {
     setCurrentYTUrl(`${URL}`)
   }
 
-  // const handleSearchInput = () => {
-  //   URL = `${youTubeUrl}${input}${KEY}`
-  //   redditURL = `${RedditUrl}${input}`
-  //   setCurrentRedditUrl(redditURL)
-  //   setCurrentYTUrl(URL)
-  // }
-
-  // const handleInput = (formInput) => {
-  //   setInput(formInput)
-  // }
-
   const fetchSearch = (slug) => {
-    console.log(slug)
     setCurrentYTUrl(`${youTubeUrl}${slug}${KEY}`)
+    setCurrentRedditUrl(`${RedditUrl}${slug}${ageGate}`)
   }
 
   const fetchDefault = () => {
     setCurrentYTUrl(`${youTubeUrl}javascript${KEY}`)
+    setCurrentRedditUrl(`${redditURL}javascript`)
   }
 
 

@@ -11,6 +11,7 @@ const Header = ({ handleInput, handleSearchSubmit }) => {
   const handleSubmit = (e) => {
     e.preventDefault()
     history.push(`/search/${input}`)
+    setInput('')
   }
 
   const handleChange = (e) => {
