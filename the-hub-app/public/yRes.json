@@ -1,0 +1,825 @@
+{
+ "kind": "youtube#searchListResponse",
+ "etag": "\"p4VTdlkQv3HQeTEaXgvLePAydmU/Ve-Py88rTMC0IFov0cb0Of0z1yI\"",
+ "nextPageToken": "CBkQAA",
+ "regionCode": "US",
+ "pageInfo": {
+  "totalResults": 1000000,
+  "resultsPerPage": 25
+ },
+ "items": [
+  {
+   "kind": "youtube#searchResult",
+   "etag": "\"p4VTdlkQv3HQeTEaXgvLePAydmU/Y_OVN3-_666oz3TG18n9Tbj8mlU\"",
+   "id": {
+    "kind": "youtube#video",
+    "videoId": "UMKWijxv0kE"
+   },
+   "snippet": {
+    "publishedAt": "2019-06-01T14:00:08.000Z",
+    "channelId": "UC5Gmg-VtFmnP8qLq8V7Pvtg",
+    "title": "10 Years of Coding in 10 Minutes",
+    "description": "Growth books: https://amzn.to/2WnvXHK My Instagram: https://www.instagram.com/thejohnfish/ Links to all projects + more below ⬇️ Camera Gear: ...",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/UMKWijxv0kE/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/UMKWijxv0kE/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/UMKWijxv0kE/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     }
+    },
+    "channelTitle": "John Fish",
+    "liveBroadcastContent": "none"
+   }
+  },
+  {
+   "kind": "youtube#searchResult",
+   "etag": "\"p4VTdlkQv3HQeTEaXgvLePAydmU/2HiBAEE03UT928AkLCeOwKjrRwc\"",
+   "id": {
+    "kind": "youtube#video",
+    "videoId": "hb7Q33ysCwI"
+   },
+   "snippet": {
+    "publishedAt": "2018-01-12T15:35:21.000Z",
+    "channelId": "UC-ZMWGgdNaiRcKXyRHdl_bg",
+    "title": "Coding is Not Difficult - Bill Gates",
+    "description": "Hello Friends welcome to Soft Tech. In this video about big techies like Bill Gates,David Karp,Mark Zuckerberg Karlie Kloss,Explain the importance of coding.",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/hb7Q33ysCwI/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/hb7Q33ysCwI/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/hb7Q33ysCwI/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     }
+    },
+    "channelTitle": "Soft Tech",
+    "liveBroadcastContent": "none"
+   }
+  },
+  {
+   "kind": "youtube#searchResult",
+   "etag": "\"p4VTdlkQv3HQeTEaXgvLePAydmU/yTLocADxNF_vCR_j7pSKQ3ocuBo\"",
+   "id": {
+    "kind": "youtube#channel",
+    "channelId": "UCvjgXvBlbQiydffZU7m1_aw"
+   },
+   "snippet": {
+    "publishedAt": "2006-07-03T18:24:29.000Z",
+    "channelId": "UCvjgXvBlbQiydffZU7m1_aw",
+    "title": "The Coding Train",
+    "description": "In this YouTube channel I publish \"creative coding\" video tutorials every week. Subjects covered range from the basics of programming languages like ...",
+    "thumbnails": {
+     "default": {
+      "url": "https://yt3.ggpht.com/-1rYs64e24jQ/AAAAAAAAAAI/AAAAAAAAAAA/B2LPB2yW030/s88-c-k-no-mo-rj-c0xffffff/photo.jpg"
+     },
+     "medium": {
+      "url": "https://yt3.ggpht.com/-1rYs64e24jQ/AAAAAAAAAAI/AAAAAAAAAAA/B2LPB2yW030/s240-c-k-no-mo-rj-c0xffffff/photo.jpg"
+     },
+     "high": {
+      "url": "https://yt3.ggpht.com/-1rYs64e24jQ/AAAAAAAAAAI/AAAAAAAAAAA/B2LPB2yW030/s800-c-k-no-mo-rj-c0xffffff/photo.jpg"
+     }
+    },
+    "channelTitle": "The Coding Train",
+    "liveBroadcastContent": "upcoming"
+   }
+  },
+  {
+   "kind": "youtube#searchResult",
+   "etag": "\"p4VTdlkQv3HQeTEaXgvLePAydmU/cKPjuG2cs2sG1qwrlcS0KpaG7fY\"",
+   "id": {
+    "kind": "youtube#video",
+    "videoId": "iIMNP9WBP68"
+   },
+   "snippet": {
+    "publishedAt": "2019-09-30T22:45:00.000Z",
+    "channelId": "UC2WHjPDvbE6O328n17ZGcfg",
+    "title": "3 Coding Tricks NO ONE Talks About",
+    "description": "Get 2 months of Skillshare Premium for free --- https://skl.sh/forrestknight14 Everyone talks about the basics of programming and how to get started - myself ...",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/iIMNP9WBP68/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/iIMNP9WBP68/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/iIMNP9WBP68/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     }
+    },
+    "channelTitle": "ForrestKnight",
+    "liveBroadcastContent": "none"
+   }
+  },
+  {
+   "kind": "youtube#searchResult",
+   "etag": "\"p4VTdlkQv3HQeTEaXgvLePAydmU/NhY_CHrKiXCTv2IpXmCTmy2pkGA\"",
+   "id": {
+    "kind": "youtube#video",
+    "videoId": "ReVeUvwTGdU"
+   },
+   "snippet": {
+    "publishedAt": "2018-07-24T17:00:13.000Z",
+    "channelId": "UCDrekHmOnkptxq3gUU0IyfA",
+    "title": "3 years of Computer Science in 8 minutes",
+    "description": "This is the most asked question on my channel by far so I thought I'd explain how I learned programming. In the process I got a little distracted and accidentally ...",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/ReVeUvwTGdU/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/ReVeUvwTGdU/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/ReVeUvwTGdU/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     }
+    },
+    "channelTitle": "Devon Crawford",
+    "liveBroadcastContent": "none"
+   }
+  },
+  {
+   "kind": "youtube#searchResult",
+   "etag": "\"p4VTdlkQv3HQeTEaXgvLePAydmU/GjEv_VTBl45u4C42mLtiSQAe3CM\"",
+   "id": {
+    "kind": "youtube#video",
+    "videoId": "F9GujgK0y2M"
+   },
+   "snippet": {
+    "publishedAt": "2015-05-27T03:09:42.000Z",
+    "channelId": "UCXTgf0gg1OMO2dv2hzmphzw",
+    "title": "Coding is Easy &amp; Why you should learn coding | AeeKayPlus",
+    "description": "It's a code.org, short film on the need of teaching coding in schools. Listen to big techies like Mark Zukerberg, Bill Gates, and many gaints, explain the importance ...",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/F9GujgK0y2M/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/F9GujgK0y2M/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/F9GujgK0y2M/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     }
+    },
+    "channelTitle": "AeeKay Plus",
+    "liveBroadcastContent": "none"
+   }
+  },
+  {
+   "kind": "youtube#searchResult",
+   "etag": "\"p4VTdlkQv3HQeTEaXgvLePAydmU/9QUASa99oV6uL7FxR9zTse7MgmE\"",
+   "id": {
+    "kind": "youtube#video",
+    "videoId": "6tZz6gr1h9E"
+   },
+   "snippet": {
+    "publishedAt": "2019-06-26T10:37:46.000Z",
+    "channelId": "UCXgGY0wkgOzynnHvSEVmE3A",
+    "title": "What is the difference between programming and coding",
+    "description": "A question like what is the difference between programming and coding can be tricky to answer, as these are one or the same. Programming and coding are ...",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/6tZz6gr1h9E/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/6tZz6gr1h9E/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/6tZz6gr1h9E/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     }
+    },
+    "channelTitle": "Hitesh Choudhary",
+    "liveBroadcastContent": "none"
+   }
+  },
+  {
+   "kind": "youtube#searchResult",
+   "etag": "\"p4VTdlkQv3HQeTEaXgvLePAydmU/nJ2NpSSgBBsvHVS0kuYzy29rwnE\"",
+   "id": {
+    "kind": "youtube#video",
+    "videoId": "H5Vzo-iPGCo"
+   },
+   "snippet": {
+    "publishedAt": "2015-10-03T14:00:01.000Z",
+    "channelId": "UCpko_-a4wgz2u_DgDgd9fqA",
+    "title": "The Try Guys Try Coding With Girls Who Code",
+    "description": "We're doin' lines… of code.” Check out more awesome videos at BuzzFeedVideo! http://bit.ly/YTbuzzfeedvideo MUSIC Super Power Up Licensed via Warner ...",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/H5Vzo-iPGCo/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/H5Vzo-iPGCo/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/H5Vzo-iPGCo/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     }
+    },
+    "channelTitle": "BuzzFeedVideo",
+    "liveBroadcastContent": "none"
+   }
+  },
+  {
+   "kind": "youtube#searchResult",
+   "etag": "\"p4VTdlkQv3HQeTEaXgvLePAydmU/LH-CiC7WqOI7WgkADJDsqgnHkXE\"",
+   "id": {
+    "kind": "youtube#channel",
+    "channelId": "UC0e3QhIYukixgh5VVpKHH9Q"
+   },
+   "snippet": {
+    "publishedAt": "2017-11-21T23:13:50.000Z",
+    "channelId": "UC0e3QhIYukixgh5VVpKHH9Q",
+    "title": "Code Bullet",
+    "description": "Welcome to Code Bullet, a place to get all things Computer Science. If you want a mix between nerdy and awesome then look no further, because Code Bullet ...",
+    "thumbnails": {
+     "default": {
+      "url": "https://yt3.ggpht.com/-sF-4zZhSLeo/AAAAAAAAAAI/AAAAAAAAAAA/SDjbkEXKcS0/s88-c-k-no-mo-rj-c0xffffff/photo.jpg"
+     },
+     "medium": {
+      "url": "https://yt3.ggpht.com/-sF-4zZhSLeo/AAAAAAAAAAI/AAAAAAAAAAA/SDjbkEXKcS0/s240-c-k-no-mo-rj-c0xffffff/photo.jpg"
+     },
+     "high": {
+      "url": "https://yt3.ggpht.com/-sF-4zZhSLeo/AAAAAAAAAAI/AAAAAAAAAAA/SDjbkEXKcS0/s800-c-k-no-mo-rj-c0xffffff/photo.jpg"
+     }
+    },
+    "channelTitle": "Code Bullet",
+    "liveBroadcastContent": "none"
+   }
+  },
+  {
+   "kind": "youtube#searchResult",
+   "etag": "\"p4VTdlkQv3HQeTEaXgvLePAydmU/cKVkmsUvP1SP8ooGc92_2_siRlc\"",
+   "id": {
+    "kind": "youtube#video",
+    "videoId": "iLHAKXQBOoA"
+   },
+   "snippet": {
+    "publishedAt": "2019-05-02T05:08:13.000Z",
+    "channelId": "UC4JX40jDee_tINbkjycV4Sg",
+    "title": "12 Hour Coding Stream - Creating A Tower Defense Game with Python &amp; Pygame",
+    "description": "12 Hour Coding LiveStream! Watch me create a tower defense game using python and pygame while coding straight for 12 hours with no breaks. This is an ...",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/iLHAKXQBOoA/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/iLHAKXQBOoA/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/iLHAKXQBOoA/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     }
+    },
+    "channelTitle": "Tech With Tim",
+    "liveBroadcastContent": "none"
+   }
+  },
+  {
+   "kind": "youtube#searchResult",
+   "etag": "\"p4VTdlkQv3HQeTEaXgvLePAydmU/2E_Bccor2SmWyhJFeM5xSlPbZVE\"",
+   "id": {
+    "kind": "youtube#video",
+    "videoId": "w-J4XXSKI4c"
+   },
+   "snippet": {
+    "publishedAt": "2019-09-16T17:00:10.000Z",
+    "channelId": "UC2WHjPDvbE6O328n17ZGcfg",
+    "title": "Why I QUIT Coding (for myself)",
+    "description": "Get Two Months of Skillshare FREE! --- https://skl.sh/forrestknight13 I really didn't want to make this video. ---------------------------------------------------------- I document ...",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/w-J4XXSKI4c/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/w-J4XXSKI4c/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/w-J4XXSKI4c/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     }
+    },
+    "channelTitle": "ForrestKnight",
+    "liveBroadcastContent": "none"
+   }
+  },
+  {
+   "kind": "youtube#searchResult",
+   "etag": "\"p4VTdlkQv3HQeTEaXgvLePAydmU/md9gAOIEn22hLaTdFt-HDWn6ERo\"",
+   "id": {
+    "kind": "youtube#video",
+    "videoId": "N7ZmPYaXoic"
+   },
+   "snippet": {
+    "publishedAt": "2015-11-16T01:54:05.000Z",
+    "channelId": "UC2r05YffIyAru43GMoxZBzw",
+    "title": "What is Coding?",
+    "description": "This video is an overview of computer programming (coding) at the most basic level. See where it came from and how it works. Content, narration, animation ...",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/N7ZmPYaXoic/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/N7ZmPYaXoic/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/N7ZmPYaXoic/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     }
+    },
+    "channelTitle": "TExplaiNations",
+    "liveBroadcastContent": "none"
+   }
+  },
+  {
+   "kind": "youtube#searchResult",
+   "etag": "\"p4VTdlkQv3HQeTEaXgvLePAydmU/ipxPLDkghGMBN33VqeWY-GKRQVs\"",
+   "id": {
+    "kind": "youtube#video",
+    "videoId": "TAAXwrgd1U8"
+   },
+   "snippet": {
+    "publishedAt": "2019-07-22T14:33:03.000Z",
+    "channelId": "UC4xKdmAXFh4ACyhpiQ_3qBw",
+    "title": "Why is coding so hard...",
+    "description": "Ex-Google Tech Lead explains why programming is so hard. Join me in my new coding interview training program: http://techinterviewpro.com/ ▻ Preparing for ...",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/TAAXwrgd1U8/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/TAAXwrgd1U8/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/TAAXwrgd1U8/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     }
+    },
+    "channelTitle": "TechLead",
+    "liveBroadcastContent": "none"
+   }
+  },
+  {
+   "kind": "youtube#searchResult",
+   "etag": "\"p4VTdlkQv3HQeTEaXgvLePAydmU/5ZlMt6elhltlGehvSyymiPBXezQ\"",
+   "id": {
+    "kind": "youtube#video",
+    "videoId": "uBaU-n77B2Q"
+   },
+   "snippet": {
+    "publishedAt": "2019-05-01T00:10:03.000Z",
+    "channelId": "UCV0qA-eDDICsRR9rPcnG7tw",
+    "title": "coding is hard...",
+    "description": "Want to land jobs at Facebook/Google/Microsoft/Amazon? Learn how to do that here: http://techinterviewpro.com/ ▻ Resume Template and Cover letter I used ...",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/uBaU-n77B2Q/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/uBaU-n77B2Q/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/uBaU-n77B2Q/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     }
+    },
+    "channelTitle": "Joma Tech",
+    "liveBroadcastContent": "none"
+   }
+  },
+  {
+   "kind": "youtube#searchResult",
+   "etag": "\"p4VTdlkQv3HQeTEaXgvLePAydmU/o81INvOh3uZom6HrRVUiJ_K6cNo\"",
+   "id": {
+    "kind": "youtube#video",
+    "videoId": "Xq3isov6mZ8"
+   },
+   "snippet": {
+    "publishedAt": "2017-08-03T15:09:10.000Z",
+    "channelId": "UCeQhZOvNKSBRU0Mdg7V44wA",
+    "title": "Coding Minecraft in One Week - C++/OpenGL Programming Challenge",
+    "description": "Hello! In this video, I attempt to create a simple voxel game/ Minecraft clone in a single week. It doesn't have the best performance or the most features; but of ...",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/Xq3isov6mZ8/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/Xq3isov6mZ8/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/Xq3isov6mZ8/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     }
+    },
+    "channelTitle": "Hopson",
+    "liveBroadcastContent": "none"
+   }
+  },
+  {
+   "kind": "youtube#searchResult",
+   "etag": "\"p4VTdlkQv3HQeTEaXgvLePAydmU/lLr-5Lql6W2tfMya9ko48TdYmqA\"",
+   "id": {
+    "kind": "youtube#video",
+    "videoId": "8CLkSzlA_oM"
+   },
+   "snippet": {
+    "publishedAt": "2019-04-19T21:04:49.000Z",
+    "channelId": "UC-Ti-ZS19ofdkdkmfh8y1lw",
+    "title": "Advice to medical coding students",
+    "description": "Advice to medical coding students and tips on being successful in school. Filmed over lunch. www.ahima.org www.aapc.com ...",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/8CLkSzlA_oM/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/8CLkSzlA_oM/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/8CLkSzlA_oM/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     }
+    },
+    "channelTitle": "Medical Coding with Bleu",
+    "liveBroadcastContent": "none"
+   }
+  },
+  {
+   "kind": "youtube#searchResult",
+   "etag": "\"p4VTdlkQv3HQeTEaXgvLePAydmU/tWO4mw2D8WZ6y9x5V_mulfUNOwk\"",
+   "id": {
+    "kind": "youtube#video",
+    "videoId": "r16Rn4_jDfk"
+   },
+   "snippet": {
+    "publishedAt": "2019-01-08T21:43:10.000Z",
+    "channelId": "UCWv7vMbMWH4-V0ZXdmDpPBA",
+    "title": "How to Learn to Code and Make $60k+ a Year (in 2019)",
+    "description": "Wondering how to learn to code? What programming languages to learn in 2019? Watch this video to find out. Python tutorial for beginners: ...",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/r16Rn4_jDfk/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/r16Rn4_jDfk/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/r16Rn4_jDfk/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     }
+    },
+    "channelTitle": "Programming with Mosh",
+    "liveBroadcastContent": "none"
+   }
+  },
+  {
+   "kind": "youtube#searchResult",
+   "etag": "\"p4VTdlkQv3HQeTEaXgvLePAydmU/OH1-EAHtJoersBeQ4h7RLL7QxW4\"",
+   "id": {
+    "kind": "youtube#video",
+    "videoId": "r_It_X7v-1E"
+   },
+   "snippet": {
+    "publishedAt": "2019-06-10T11:11:52.000Z",
+    "channelId": "UCmtyQOKKmrMVaKuRXz02jbQ",
+    "title": "Coding Adventure: Simulating an Ecosystem",
+    "description": "In this coding adventure I attempt to simulate a simple ecosystem. Will the foxes and rabbits get along? Probably not... If you'd like to support the creation of more ...",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/r_It_X7v-1E/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/r_It_X7v-1E/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/r_It_X7v-1E/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     }
+    },
+    "channelTitle": "Sebastian Lague",
+    "liveBroadcastContent": "none"
+   }
+  },
+  {
+   "kind": "youtube#searchResult",
+   "etag": "\"p4VTdlkQv3HQeTEaXgvLePAydmU/SUJJh73bmuAMag8QQnpBziCaDzI\"",
+   "id": {
+    "kind": "youtube#video",
+    "videoId": "aI4CAJA6wgk"
+   },
+   "snippet": {
+    "publishedAt": "2019-08-15T10:29:18.000Z",
+    "channelId": "UCS5tt2z_DFvG7-39J3aE-bQ",
+    "title": "Coding on a 15 year old computer - Programmer Boris",
+    "description": "Get the Squatnik Hoodies here: https://www.weslav.com/collections/squatnik-suit Programmer Boris is here! I had to get some floppy disks and a new drive to ...",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/aI4CAJA6wgk/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/aI4CAJA6wgk/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/aI4CAJA6wgk/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     }
+    },
+    "channelTitle": "Life of Boris",
+    "liveBroadcastContent": "none"
+   }
+  },
+  {
+   "kind": "youtube#searchResult",
+   "etag": "\"p4VTdlkQv3HQeTEaXgvLePAydmU/z11WbGTNgEvyDRL_DFX3UN5ZeyQ\"",
+   "id": {
+    "kind": "youtube#video",
+    "videoId": "rfscVS0vtbw"
+   },
+   "snippet": {
+    "publishedAt": "2018-07-11T18:00:42.000Z",
+    "channelId": "UC8butISFwT-Wl7EV0hUK0BQ",
+    "title": "Learn Python - Full Course for Beginners [Tutorial]",
+    "description": "This course will give you a full introduction into all of the core concepts in python. Follow along with the videos and you'll be a python programmer in no time!",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/rfscVS0vtbw/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/rfscVS0vtbw/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/rfscVS0vtbw/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     }
+    },
+    "channelTitle": "freeCodeCamp.org",
+    "liveBroadcastContent": "none"
+   }
+  },
+  {
+   "kind": "youtube#searchResult",
+   "etag": "\"p4VTdlkQv3HQeTEaXgvLePAydmU/Byu6G1fv8LHffT1D0Rmueginjg8\"",
+   "id": {
+    "kind": "youtube#video",
+    "videoId": "ntGJ_QRonqk"
+   },
+   "snippet": {
+    "publishedAt": "2019-01-19T23:41:34.000Z",
+    "channelId": "UCHf4TncXbaMsC6cpEUMQ4UQ",
+    "title": "Medical Coding Basics: How to Tab Your Code Books!",
+    "description": "This tabbing system will have you find key pages in record time. The templates include instruction on how to place them throughout your 3 medical coding books ...",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/ntGJ_QRonqk/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/ntGJ_QRonqk/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/ntGJ_QRonqk/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     }
+    },
+    "channelTitle": "Medical Coding Academy",
+    "liveBroadcastContent": "none"
+   }
+  },
+  {
+   "kind": "youtube#searchResult",
+   "etag": "\"p4VTdlkQv3HQeTEaXgvLePAydmU/SZxmCHXOvdXRwszhdAgpl8sjfPs\"",
+   "id": {
+    "kind": "youtube#video",
+    "videoId": "xGmXxpIj6vs"
+   },
+   "snippet": {
+    "publishedAt": "2017-05-05T20:29:35.000Z",
+    "channelId": "UC15WSgcM_5tmN6JRbhA4UaQ",
+    "title": "Coding &quot;Snake&quot; in 4 min 30 sec (plain browser JavaScript)",
+    "description": "Support on Patreon: https://www.patreon.com/gamkedo Try my free course: http://code-your-first-game.com (or full URL is ...",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/xGmXxpIj6vs/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/xGmXxpIj6vs/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/xGmXxpIj6vs/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     }
+    },
+    "channelTitle": "Chris DeLeon of HomeTeam GameDev",
+    "liveBroadcastContent": "none"
+   }
+  },
+  {
+   "kind": "youtube#searchResult",
+   "etag": "\"p4VTdlkQv3HQeTEaXgvLePAydmU/HQx5hEQdlGl8tpWBfhHkaLwIe1s\"",
+   "id": {
+    "kind": "youtube#video",
+    "videoId": "EuPSibuIKIg"
+   },
+   "snippet": {
+    "publishedAt": "2019-09-28T13:30:00.000Z",
+    "channelId": "UCaO6VoaYJv4kS-TQO_M-N_g",
+    "title": "Google Coding Interview With A Competitive Programmer",
+    "description": "In this video, I conduct a mock Google coding interview with a competitive programmer, Errichto. As a Google Software Engineer, I interviewed dozens of ...",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/EuPSibuIKIg/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/EuPSibuIKIg/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/EuPSibuIKIg/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     }
+    },
+    "channelTitle": "Clément Mihailescu",
+    "liveBroadcastContent": "none"
+   }
+  },
+  {
+   "kind": "youtube#searchResult",
+   "etag": "\"p4VTdlkQv3HQeTEaXgvLePAydmU/U4VED_F2XvcYn0NPWQNEZ_noDeg\"",
+   "id": {
+    "kind": "youtube#video",
+    "videoId": "wZR6QFE2m6o"
+   },
+   "snippet": {
+    "publishedAt": "2018-06-27T16:53:33.000Z",
+    "channelId": "UCoLUji8TYrgDy74_iiazvYA",
+    "title": "Every Coding Interview Ever (Parody)",
+    "description": "that feeling when you have a phone interview for a job and it goes horribly this is the long awaited followup to this video on coding interviews in silicon valley ...",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/wZR6QFE2m6o/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/wZR6QFE2m6o/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/wZR6QFE2m6o/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     }
+    },
+    "channelTitle": "Jarvis Johnson",
+    "liveBroadcastContent": "none"
+   }
+  },
+  {
+   "kind": "youtube#searchResult",
+   "etag": "\"p4VTdlkQv3HQeTEaXgvLePAydmU/coZ4BlG_KuVCYeJgjMjQaBJuh3k\"",
+   "id": {
+    "kind": "youtube#video",
+    "videoId": "5o-kdjv7FD0"
+   },
+   "snippet": {
+    "publishedAt": "2018-05-26T01:23:27.000Z",
+    "channelId": "UCxX9wt5FWQUAAz4UrysqK9A",
+    "title": "Amazon Coding Interview Question - Recursive Staircase Problem",
+    "description": "Amazon coding interview question and answer - recursive staircase problem! For daily coding problems like this one, I'd recommend this website called Daily ...",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/5o-kdjv7FD0/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/5o-kdjv7FD0/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/5o-kdjv7FD0/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     }
+    },
+    "channelTitle": "CS Dojo",
+    "liveBroadcastContent": "none"
+   }
+  }
+ ]
+}

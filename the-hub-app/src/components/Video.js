@@ -1,5 +1,8 @@
 import React from 'react';
 import YouTube from 'react-youtube';
+import {
+  Card,
+} from 'bloomer'
 
 const opts = {
   height: '200',
@@ -11,7 +14,9 @@ const opts = {
 
 const Video = ({ video }) => {
   return (
-    <YouTube videoId={video.id.videoId} opts={opts} />
+    <Card>
+      <YouTube videoId={video.id.videoId} opts={opts} />
+    </Card>
   )
 }
 export default Video;

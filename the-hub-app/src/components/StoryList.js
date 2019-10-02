@@ -2,20 +2,15 @@ import React from 'react';
 import Reddit from './Reddit'
 import Video from './Video'
 
-
-const StoryList = (props) => {
+const StoryList = ({ youtubeRes, redditRes }) => {
+  const data = [...youtubeRes, ...redditRes]
   return (
     <div id='story-list'>
-      {
-        props.youtubeRes && props.youtubeRes.map(video => {
-          return <Video video={video} key={video.id.videoId} />
-        })
-      }
-      {
-        props.redditRes && props.redditRes.map((item, index) => {
-          return <Reddit item={item} key={index} />
-        })
-      }
+      {data && data.map((item, index) => {
+        return item.kind === 't5' ?
+          <Reddit item={item} key={index} /> :
+          <Video video={item} key={item.id.videoId} />
+      })}
     </div>
   )
 }

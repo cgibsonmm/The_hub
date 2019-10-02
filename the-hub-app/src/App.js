@@ -11,12 +11,13 @@ import './App.css';
 
 
 const KEY = '&key=AIzaSyCuLFiDzDJdu67ORKCdrNijn4xKRCtSE6k'
+const KEY2 = '&key=AIzaSyBABfg1lN-Ca7PYSUvrhmoif8LnFcmdB3o'
 const youTubeUrl = 'https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=10&q='
 const RedditUrl = 'https://www.reddit.com/subreddits/search.json?q='
 const ageGate = '&limit=10'
 
 function App() {
-  let URL = `${youTubeUrl}javascript${KEY}`;
+  let URL = `${youTubeUrl}javascript${KEY2}`;
   let redditURL = `${RedditUrl}javascript${ageGate}`
   const [youtubeRes, setYoutubeRes] = useState([])
   const [redditRes, setRedditRes] = useState([])
@@ -25,14 +26,25 @@ function App() {
 
   useEffect(() => {
     Axios.get(currentRedditUrl).then(res => {
-      console.log('hello')
       setRedditRes(filterRedditRes(res.data.data.children))
     }).catch(e => console.log(e.message))
-    // Axios.get(currentYTUrl).then(res => {
-    //   setYoutubeRes(filterYouTubeRes(res.data.items))
-    // }).catch(e => console.log(e.message)
-    // )
-  }, [currentRedditUrl, currentYTUrl])
+  }, [currentRedditUrl])
+
+  // useEffect(() => {
+  //   Axios.get(currentYTUrl).then(res => {
+  //     setYoutubeRes(filterYouTubeRes(res.data.items))
+  //   }).catch(e => console.log(e.message)
+  //   )
+  // }, [currentYTUrl])
+
+  useEffect(() => {
+    Axios.get('yRes.json').then(res => {
+      console.log(res);
+      setYoutubeRes(filterYouTubeRes(res.data.items))
+    }).catch(e => console.log(e.message)
+    )
+  }, [currentYTUrl])
+
 
   const filterRedditRes = (data) => {
     return data.filter(item => {
@@ -47,17 +59,17 @@ function App() {
   }
 
   const trending = () => {
-    URL = `https://www.googleapis.com/youtube/v3/videos?part=contentDetails&chart=mostPopular&regionCode=US${KEY}`
+    URL = `https://www.googleapis.com/youtube/v3/videos?part=contentDetails&chart=mostPopular&regionCode=US${KEY2}`
     setCurrentYTUrl(`${URL}`)
   }
 
   const fetchSearch = (slug) => {
-    setCurrentYTUrl(`${youTubeUrl}${slug}${KEY}`)
+    // setCurrentYTUrl(`${youTubeUrl}${slug}${KEY2}`)
     setCurrentRedditUrl(`${RedditUrl}${slug}${ageGate}`)
   }
 
   const fetchDefault = () => {
-    setCurrentYTUrl(`${youTubeUrl}javascript${KEY}`)
+    setCurrentYTUrl(`${youTubeUrl}javascript${KEY2}`)
     setCurrentRedditUrl(`${redditURL}javascript`)
   }
 

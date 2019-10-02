@@ -8,13 +8,13 @@ const Sidebar = () => {
       <MenuLabel>Top Catigories</MenuLabel>
       <MenuList>
         <li>
-          <MenuLink><Link to='/test'>test</Link></MenuLink>
+          <MenuLink href="/test">test</MenuLink>
         </li>
         <li>
-          <MenuLink><Link to='/test'>test</Link></MenuLink>
+          <MenuLink href='/test'>test</MenuLink>
         </li>
         <li>
-          <MenuLink><Link to='/test'>test</Link></MenuLink>
+          <MenuLink href='/test'>test</MenuLink>
         </li>
       </MenuList>
     </Menu>
