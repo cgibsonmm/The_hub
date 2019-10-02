@@ -2,11 +2,11 @@ import React from 'react';
 import Sidebar from './Sidebar';
 import StoryList from './StoryList'
 
-const Main = ({ youtubeRes }) => {
+const Main = ({ redditRes, youtubeRes }) => {
   return (
     <main>
       <Sidebar />
-      <StoryList youtubeRes={youtubeRes} />
+      <StoryList redditRes={redditRes} youtubeRes={youtubeRes} />
     </main>
 
   )

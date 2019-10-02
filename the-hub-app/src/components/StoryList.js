@@ -4,23 +4,29 @@ import YouTube from 'react-youtube';
 
 const StoryList = (props) => {
   const opts = {
-    height: '240',
-    width: '450',
+    height: '200',
+    width: '375',
     playerVars: { // https://developers.google.com/youtube/player_parameters
       autoplay: 0,
     }
   }
 
-
+  const data = [...props.youtubeRes, ...props.redditRes]
 
   return (
-    <ul>
+    <div id='story-list'>
       {
         props.youtubeRes && props.youtubeRes.map(video => {
           return <YouTube videoId={video.id.videoId} opts={opts} key={video.id.videoId} />
         })
       }
-    </ul >
+
+      {
+        props.redditRes && props.redditRes.map(item => {
+          return <img src={`${item.data.header_img}`} />
+        })
+      }
+    </div>
   )
 }
 
