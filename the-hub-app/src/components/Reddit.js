@@ -5,7 +5,6 @@ import Paper from '@material-ui/core/Paper'
 import reddit from './../images/reddit.png'
 import Typography from '@material-ui/core/Typography';
 import './../css/Reddit.css'
-// var Filter = require('bad-words')
 
 
 const useStyles = makeStyles({

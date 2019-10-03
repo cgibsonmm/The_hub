@@ -7,10 +7,13 @@ import Hidden from '@material-ui/core/Hidden'
 import Toolbar from '@material-ui/core/Toolbar'
 import Button from '@material-ui/core/Button'
 import Input from '@material-ui/core/Input'
+import Divider from '@material-ui/core/Divider'
+import List from '@material-ui/core/List'
+import ListItem from '@material-ui/core/ListItem'
+import ListItemText from '@material-ui/core/ListItemText'
 import IconButton from '@material-ui/core/IconButton'
 import MenuIcon from '@material-ui/icons/Menu'
 import Drawer from '@material-ui/core/Drawer';
-import ClickAwayListener from '@material-ui/core/ClickAwayListener';
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -91,6 +94,12 @@ const Header = () => {
               <MenuIcon />
             </IconButton>
             <Drawer anchor='top' open={isActive} onClose={toggleClose}>
+              <List>
+                <ListItem button>
+                  <Link to='/trending'><ListItemText primary="Trending" /></Link>
+                </ListItem>
+              </List>
+              <Divider />
               <form className={classes.dropDown} onSubmit={handleSubmit}>
                 <Input onChange={handleChange} onClick={e => e.stopPropagation()} placeholder='search' />
                 <Button className={classes.button} variant="contained" type="submit">Search</Button>
@@ -99,7 +108,7 @@ const Header = () => {
           </Hidden>
         </Toolbar>
       </AppBar>
-    </header >
+    </header>
   )
 }
 
