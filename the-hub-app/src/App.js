@@ -7,6 +7,7 @@ import Footer from './components/Footer'
 import { createMuiTheme } from '@material-ui/core/styles'
 import './App.css'
 import Axios from 'axios'
+var _ = require('lodash')
 
 const theme = createMuiTheme({
   palette: {
@@ -44,6 +45,7 @@ function App() {
   const [redditRes, setRedditRes] = useState([])
   const [currentYTUrl, setCurrentYTUrl] = useState(URL)
   const [currentRedditUrl, setCurrentRedditUrl] = useState(redditURL)
+  const [zipData, setZipData] = useState([])
 
   useEffect(() => {
     Axios.get(currentRedditUrl).then(res => {
@@ -60,11 +62,15 @@ function App() {
 
   useEffect(() => {
     Axios.get('yRes.json').then(res => {
-      console.log(res);
       setYoutubeRes(filterYouTubeRes(res.data.items))
     }).catch(e => console.log(e.message)
     )
   }, [currentYTUrl])
+
+  useEffect(() => {
+    const zipper = (_.zip(youtubeRes, redditRes).flat())
+    setZipData((_zipData) => zipper)
+  }, [redditRes, youtubeRes])
 
 
   const filterRedditRes = (data) => {
@@ -95,14 +101,17 @@ function App() {
   }
 
 
+
+
   return (
+
     <div className="App">
       <Header theme={theme} />
       <Sidebar />
       <Switch>
         <Route exact path='/' render={() => {
           fetchDefault()
-          return <Main redditRes={redditRes} youtubeRes={youtubeRes} />
+          return <Main zipData={zipData} redditRes={redditRes} youtubeRes={youtubeRes} />
         }} />
         <Route exact path='/search/:slug' render={({ match }) => {
           fetchSearch(match.params.slug)
