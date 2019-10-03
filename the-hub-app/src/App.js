@@ -38,11 +38,11 @@ function App() {
   // }, [currentYTUrl])
 
   useEffect(() => {
-    Axios.get('yRes.json').then(res => {
-      console.log(res);
-      setYoutubeRes(filterYouTubeRes(res.data.items))
-    }).catch(e => console.log(e.message)
-    )
+    // Axios.get('yRes.json').then(res => {
+    //   console.log(res);
+    //   setYoutubeRes(filterYouTubeRes(res.data.items))
+    // }).catch(e => console.log(e.message)
+    // )
   }, [currentYTUrl])
 
 

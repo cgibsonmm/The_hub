@@ -4,7 +4,10 @@ import StoryList from './StoryList'
 const Main = ({ redditRes, youtubeRes }) => {
   return (
     <main className='main'>
-      <StoryList redditRes={redditRes} youtubeRes={youtubeRes} />
+      <StoryList
+        redditRes={redditRes}
+        youtubeRes={youtubeRes}
+      />
     </main>
 
   )

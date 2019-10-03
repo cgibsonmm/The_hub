@@ -3,10 +3,11 @@ import YouTube from 'react-youtube';
 import {
   Card,
 } from 'bloomer'
+import '../css/Video.css'
 
 const opts = {
-  height: '200',
-  width: '375',
+  height: '500',
+  width: '200',
   playerVars: { // https://developers.google.com/youtube/player_parameters
     autoplay: 0,
   }
@@ -14,9 +15,9 @@ const opts = {
 
 const Video = ({ video }) => {
   return (
-    <Card>
+    <>
       <YouTube videoId={video.id.videoId} opts={opts} />
-    </Card>
+    </>
   )
 }
 export default Video;
