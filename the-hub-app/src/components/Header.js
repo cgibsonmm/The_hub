@@ -91,7 +91,7 @@ const Header = () => {
               <MenuIcon />
             </IconButton>
             <Drawer anchor='top' open={isActive} onClose={toggleClose}>
-              <form className={classes.dropDown} only="mdDown" onSubmit={handleSubmit}>
+              <form className={classes.dropDown} onSubmit={handleSubmit}>
                 <Input onChange={handleChange} onClick={e => e.stopPropagation()} placeholder='search' />
                 <Button className={classes.button} variant="contained" type="submit">Search</Button>
               </form>

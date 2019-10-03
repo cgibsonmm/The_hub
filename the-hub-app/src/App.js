@@ -37,7 +37,7 @@ const KEY = '&key=AIzaSyCuLFiDzDJdu67ORKCdrNijn4xKRCtSE6k';
 const KEY2 = '&key=AIzaSyBABfg1lN-Ca7PYSUvrhmoif8LnFcmdB3o';
 const youTubeUrl = 'https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=10&q=';
 const RedditUrl = 'https://www.reddit.com/subreddits/search.json?q=';
-const ageGate = '&limit=10';
+const ageGate = '&limit=20';
 
 function App() {
   let URL = `${youTubeUrl}javascript${KEY2}`;
@@ -112,7 +112,7 @@ function App() {
           path="/search/:slug"
           render={({ match }) => {
             fetchSearch(match.params.slug);
-            // return <Main redditRes={redditRes} youtubeRes={youtubeRes} />;
+            return <Main redditRes={redditRes} youtubeRes={youtubeRes} zipData={zipData} />;
           }}
         />
         <Route
@@ -120,7 +120,7 @@ function App() {
           path="/trending"
           render={() => {
             trending();
-            // return <Main redditRes={redditRes} youtubeRes={youtubeRes} />;
+            return <Main redditRes={redditRes} youtubeRes={youtubeRes} zipData={zipData} />;
           }}
         />
       </Switch>
