@@ -16,9 +16,17 @@ form button{
 }
 
 #story-list{
+  position: absolute;
+  left: 110px;
   display: flex;
-  width: 100%;
+  width: auto;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+}
+
+@media (max-width: 960px){
+  #story-list{
+    left: 0;
+  }
 }

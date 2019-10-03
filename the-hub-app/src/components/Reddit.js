@@ -9,6 +9,7 @@ import './../css/Reddit.css'
 
 const useStyles = makeStyles({
   paper: {
+    zIndex: '1',
     height: '200px',
     width: '400px',
     margin: '10px 10px 10px 10px',
