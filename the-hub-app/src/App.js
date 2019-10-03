@@ -4,7 +4,31 @@ import Header from './components/Header'
 import Main from './components/Main'
 import Sidebar from './components/Sidebar'
 import Footer from './components/Footer'
+import { createMuiTheme } from '@material-ui/core/styles'
+import './App.css'
 import Axios from 'axios'
+
+const theme = createMuiTheme({
+  palette: {
+    primary: {
+      main: '#FFFC31'
+    },
+    seconday: {
+      main:
+        '#30192A',
+    },
+    light: {
+      main: '#EFF6EE',
+    },
+
+    coal: {
+      main: '#373F51',
+    },
+    gray: {
+      main: '#9197AE'
+    },
+  }
+})
 
 
 const KEY = '&key=AIzaSyCuLFiDzDJdu67ORKCdrNijn4xKRCtSE6k'
@@ -73,7 +97,7 @@ function App() {
 
   return (
     <div className="App">
-      <Header />
+      <Header theme={theme} />
       <Sidebar />
       <Switch>
         <Route exact path='/' render={() => {
