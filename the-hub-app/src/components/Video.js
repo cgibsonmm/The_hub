@@ -1,8 +1,6 @@
 import React from 'react';
 import YouTube from 'react-youtube';
-import {
-  Card,
-} from 'bloomer'
+
 import '../css/Video.css'
 
 const opts = {

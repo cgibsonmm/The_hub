@@ -1,18 +1,5 @@
 import React, { useState, useStyles } from 'react';
-import { Link, useHistory } from 'react-router-dom'
-import {
-  Field,
-  Label,
-  Control,
-  Input,
-  Button,
-  Navbar,
-  NavbarBrand,
-  NavbarItem,
-  NavbarEnd,
-  NavbarMenu,
-  NavbarBurger,
-} from 'bloomer'
+import { Link, useHistory } from 'react-router-dom';
 
 
 const Header = ({ handleInput, handleSearchSubmit }) => {
@@ -37,24 +24,13 @@ const Header = ({ handleInput, handleSearchSubmit }) => {
   }
   return (
     <header>
-      <Navbar>
-        <NavbarBrand>
-          <NavbarItem>
-            <Link to='/'><h1>The Hub</h1></Link>
-          </NavbarItem>
-          <NavbarBurger isActive={isActive} onClick={handleClick} />
-        </NavbarBrand>
-        <NavbarMenu isActive={isActive} onClick={handleClick}>
-          <NavbarEnd>
-            <NavbarItem>
-              <form onSubmit={handleSubmit}>
-                <Input onChange={handleChange} onClick={e => e.stopPropagation()} placeholder='search' />
-                <Button isColor='primary' type="submit">Search</Button>
-              </form>
-            </NavbarItem>
-          </NavbarEnd>
-        </NavbarMenu>
-      </Navbar>
+      <Link to='/'><h1>The Hub</h1></Link>
+
+
+      <form onSubmit={handleSubmit}>
+        <input onChange={handleChange} onClick={e => e.stopPropagation()} placeholder='search' />
+        <button isColor='primary' type="submit">Search</button>
+      </form>
     </header>
   )
 }
