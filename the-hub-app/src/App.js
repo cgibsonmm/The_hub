@@ -71,12 +71,12 @@ function App() {
     }).catch((e) => console.log(e.message));
   }, [currentRedditUrl]);
 
-  useEffect(() => {
-    Axios.get(currentYTUrl).then(res => {
-      setYoutubeRes(filterYouTubeRes(res.data.items))
-    }).catch(e => console.log(e.message)
-    )
-  }, [currentYTUrl])
+  // useEffect(() => {
+  //   Axios.get(currentYTUrl).then(res => {
+  //     setYoutubeRes(filterYouTubeRes(res.data.items))
+  //   }).catch(e => console.log(e.message)
+  //   )
+  // }, [currentYTUrl])
 
   // useEffect(() => {
   //   Axios.get('yRes.json').then((res) => {
@@ -84,15 +84,15 @@ function App() {
   //   }).catch((e) => console.log(e.message));
   // }, [currentYTUrl]);
 
-  useEffect(() => {
-    Axios.get(currentNewsUrl).then(res => {
-      let newsD = res.data.articles.map(item => {
-        let pair = { type: 'NEWS' }
-        return { ...item, ...pair }
-      })
-      setNewsRes(newsD)
-    })
-  }, [currentNewsUrl])
+  // useEffect(() => {
+  //   Axios.get(currentNewsUrl).then(res => {
+  //     let newsD = res.data.articles.map(item => {
+  //       let pair = { type: 'NEWS' }
+  //       return { ...item, ...pair }
+  //     })
+  //     setNewsRes(newsD)
+  //   })
+  // }, [currentNewsUrl])
 
   useEffect(() => {
     const zipper = (_.zip(youtubeRes, redditRes, newsRes).flat());
@@ -116,6 +116,12 @@ function App() {
     setCurrentNewsUrl(`${newsUrl}sports${NEWSKEY}`)
     setCurrentYTUrl(`${youTubeUrl}sports${KEY2}`)
     setCurrentRedditUrl(`${RedditUrl}sports${ageGate}`);
+  }
+
+  const finance = () => {
+    setCurrentNewsUrl(`${newsUrl}finance${NEWSKEY}`)
+    setCurrentYTUrl(`${youTubeUrl}finance${KEY2}`)
+    setCurrentRedditUrl(`${RedditUrl}finance${ageGate}`);
   }
 
   const fetchSearch = (slug) => {
@@ -166,6 +172,14 @@ function App() {
           path="/Sports"
           render={() => {
             sports();
+            return <Main redditRes={redditRes} youtubeRes={youtubeRes} zipData={zipData} />;
+          }}
+        />
+        <Route
+          exact
+          path="/Finance"
+          render={() => {
+            finance();
             return <Main redditRes={redditRes} youtubeRes={youtubeRes} zipData={zipData} />;
           }}
         />

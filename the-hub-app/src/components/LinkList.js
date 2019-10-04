@@ -6,6 +6,7 @@ import ListItemText from '@material-ui/core/ListItemText';
 import TrendingUpIcon from '@material-ui/icons/TrendingUp'
 import BuildIcon from '@material-ui/icons/Build'
 import SportsFootballIcon from '@material-ui/icons/SportsFootball'
+import PollIcon from '@material-ui/icons/Poll'
 import { Link, useHistory } from 'react-router-dom'
 import { makeStyles } from '@material-ui/core/styles';
 import Divider from '@material-ui/core/Divider';
@@ -29,6 +30,7 @@ const LinkList = () => {
   const icons = [
     <TrendingUpIcon className={classes.link} />,
     <SportsFootballIcon className={classes.link} />,
+    <PollIcon className={classes.link} />,
     <BuildIcon className={classes.link} />,
 
 
@@ -36,7 +38,7 @@ const LinkList = () => {
   return (
     <>
       <List>
-        {['Trending', 'Sports', 'Preferences'].map((item, index) => (
+        {['Trending', 'Sports', 'Finance', 'Preferences'].map((item, index) => (
           <>
             <ListItem key={index} onClick={() => linkTo(item)} button>
               <ListItemIcon>

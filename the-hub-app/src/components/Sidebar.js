@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import LinkList from './LinkList'
+import Switches from './Switches'
 
 import Drawer from '@material-ui/core/Drawer';
 import Hidden from '@material-ui/core/Hidden';
@@ -28,6 +29,7 @@ const Sidebar = () => {
           variant="permanent"
         >
           <LinkList />
+          <Switches />
         </Drawer>
       </Hidden>
     </>
