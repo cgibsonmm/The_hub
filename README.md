@@ -15,9 +15,9 @@
 | Building Component Tree | H | 3hrs | 3 | 3 |
 | Working page updates | H | 3 hrs | 2 | 2 |
 | Writing Filter Code | H | 3hrs | 3 | 3 |
-| MK2 styling | H | 4hrs | 2 | 2 |
+| MK2 styling | H | 4hrs | 2 | 3 |
 | Basic animations | H | 3hrs | 1 | 1 |
-| Total | H | 24hrs | 0 | 0 |
+| Total | H | 24hrs | 25 | 25 |
 
 
 
@@ -81,3 +81,7 @@
 - react-spring
 - react overdrive
 
+
+
+### Change Log
+- Removed twitter from project
