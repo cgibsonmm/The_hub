@@ -10,13 +10,13 @@
 
 | Component | Priority | Estimated Time | Time Invetsted | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| Basic Styling | H | 4hrs| 6 | 0 |
-| Working with API | H | 4hrs| 4 | 0 |
-| Building Component Tree | H | 3hrs | 3 | 0 |
-| Working page updates | H | 3 hrs | 2 | 0 |
-| Writing Filter Code | H | 3hrs | 0 | 0 |
-| MK2 styling | H | 4hrs | 0 | 0 |
-| Basic animations | H | 3hrs | 0 | 0 |
+| Basic Styling | H | 4hrs| 8 | 8 |
+| Working with API | H | 4hrs| 5 | 5 |
+| Building Component Tree | H | 3hrs | 3 | 3 |
+| Working page updates | H | 3 hrs | 2 | 2 |
+| Writing Filter Code | H | 3hrs | 3 | 3 |
+| MK2 styling | H | 4hrs | 2 | 2 |
+| Basic animations | H | 3hrs | 1 | 1 |
 | Total | H | 24hrs | 0 | 0 |
 
 
