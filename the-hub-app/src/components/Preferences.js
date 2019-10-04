@@ -25,8 +25,11 @@ const Preferences = () => {
     <>
       <Card className={classes.card}>
         <Typography>
+          <h4>Things To Come</h4>
           <List>
-            <ListItem>hello</ListItem>
+            <ListItem>
+              Ability to set a default search term
+            </ListItem>
           </List>
         </Typography>
       </Card>

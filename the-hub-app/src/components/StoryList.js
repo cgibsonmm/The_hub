@@ -5,8 +5,6 @@ import News from './News'
 var _ = require('lodash')
 
 const StoryList = ({ zipData }) => {
-  console.log(zipData);
-
   const [data, setData] = useState([])
 
   useEffect(() => {
