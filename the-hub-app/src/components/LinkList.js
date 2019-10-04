@@ -43,7 +43,7 @@ const LinkList = () => {
             <ListItem key={index} onClick={() => linkTo(item)} button>
               <ListItemIcon>
                 {icons[index]}
-              </ListItemIcon>
+              </ListItemIcon >
               <ListItemText className={classes.link} primary={`${item}`} />
             </ListItem>
             <Divider />

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useSpring, animated } from 'react-spring'
 import LinkList from './LinkList'
+import Switches from './Switches'
 import Typography from '@material-ui/core/Typography'
 import { Link, useHistory } from 'react-router-dom';
 import { makeStyles } from '@material-ui/core/styles'
@@ -123,6 +124,7 @@ const Header = () => {
               onClose={toggleClose}
             >
               <LinkList />
+              <Switches />
               <Divider />
               <form className={classes.dropDown} onSubmit={handleSubmit}>
                 <TextField
