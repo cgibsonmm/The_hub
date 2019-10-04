@@ -16,13 +16,20 @@ const useStyles = makeStyles({
     backgroundColor: '#373F51',
     color: '#FFFC31',
     textAlign: 'center',
+    overflow: 'hidden'
+  },
+  heading: {
+    color: '#EEF6EE',
   },
   link: {
-    color: '#FFFC31',
+    color: '#EEF6EE',
     textDecoration: 'none',
   },
   para: {
     padding: '3px',
+  },
+  avatar: {
+    margin: '5px',
   }
 })
 
@@ -46,7 +53,7 @@ const Reddit = ({ item }) => {
   }
 
   const cutStringLength = (str) => {
-    return str.length > 200 ? str.substring(0, 200).concat('...') : str
+    return str.length > 150 ? str.substring(0, 150).concat('...') : str
   }
 
   const cutHeader = (str) => {
@@ -55,13 +62,15 @@ const Reddit = ({ item }) => {
 
   const renderIfThere = () => {
     if (public_description && header_title && display_name_prefixed) {
-      return (< Paper className={classes.paper} >
-        <a className={classes.link} href={`https://reddit.com/${display_name_prefixed}`}>
-          <Avatar src={avatar()} />
-          <Typography variant='h5' component='h5'>{cutHeader(header_title)}</Typography>
-          <Typography className={classes.para} component='p'>{cutStringLength(public_description)}</Typography>
-        </a>
-      </Paper >)
+      return (
+        < Paper className={classes.paper} >
+          <a className={classes.link} href={`https://reddit.com/${display_name_prefixed}`}>
+            <Avatar className={classes.avatar} src={avatar()} />
+            <Typography className={classes.heading} variant='h5' component='h5'>{cutHeader(header_title)}</Typography>
+            <Typography className={classes.para} component='p'>{cutStringLength(public_description)}</Typography>
+          </a>
+        </Paper >
+      )
     }
   }
 

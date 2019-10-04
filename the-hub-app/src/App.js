@@ -7,6 +7,7 @@ import Sidebar from './components/Sidebar';
 import Footer from './components/Footer';
 import './App.css';
 import Axios from 'axios';
+import Preferences from './components/Preferences';
 
 const _ = require('lodash');
 
@@ -123,6 +124,8 @@ function App() {
             return <Main redditRes={redditRes} youtubeRes={youtubeRes} zipData={zipData} />;
           }}
         />
+
+        <Route exact path='/preferences' component={Preferences} />
       </Switch>
       <Footer />
     </div>

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState } from 'react'
 import LinkList from './LinkList'
 
 import Drawer from '@material-ui/core/Drawer';
@@ -12,7 +12,8 @@ const useStyles = makeStyles({
     top: '80px',
     background: '#333333',
     width: '200px',
-    color: '#FFFC31'
+    color: '#FFFC31',
+    boxShadow: '0 0 4px rgb(19, 19, 19)'
   },
 });
 
