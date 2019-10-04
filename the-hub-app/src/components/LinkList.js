@@ -36,21 +36,19 @@ const LinkList = () => {
 
   ]
   return (
-    <>
-      <List>
-        {['Trending', 'Sports', 'Finance', 'Preferences'].map((item, index) => (
-          <>
-            <ListItem key={index} onClick={() => linkTo(item)} button>
-              <ListItemIcon>
-                {icons[index]}
-              </ListItemIcon >
-              <ListItemText className={classes.link} primary={`${item}`} />
-            </ListItem>
-            <Divider />
-          </>
-        ))}
-      </List>
-    </>
+    <List>
+      {['Trending', 'Sports', 'Finance', 'Preferences'].map((item, index) => (
+        <>
+          <ListItem key={index} onClick={() => linkTo(item)} button>
+            <ListItemIcon>
+              {icons[index]}
+            </ListItemIcon>
+            <ListItemText className={classes.link} primary={`${item}`} />
+          </ListItem>
+          <Divider />
+        </>
+      ))}
+    </List>
   )
 }
 

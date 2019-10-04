@@ -11,7 +11,7 @@ const opts = {
   height: '200',
   width: '400',
   borderRadius: '8',
-  playerVars: { // https://developers.google.com/youtube/player_parameters
+  playerVars: {
     autoplay: 0,
   }
 }

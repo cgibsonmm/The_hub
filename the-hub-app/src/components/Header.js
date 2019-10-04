@@ -134,7 +134,6 @@ const Header = () => {
                   onClick={e => e.stopPropagation()}
                   placeholder='search'
                   variant="outlined"
-
                 />
                 <Button className={classes.button} variant="contained" type="submit">Search</Button>
               </form>

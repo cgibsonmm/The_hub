@@ -70,7 +70,6 @@ const News = ({ item }) => {
     }
   })
   const classes = useStyles()
-  console.log(item)
   return (
     <>
       <animated.div style={fade}>
