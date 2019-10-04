@@ -1,68 +1,87 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# The Hub
 
-## Available Scripts
+### The Hub is your place for social media information. The single place needed to view all of your most important media content in one central location.
 
-In the project directory, you can run:
+##### Using Youtube, Twitter, and Reddit APIs the app will gather a hub of tech related information. The Hub provides you with all of your nessasary information all in one place. Users will be able to search and filter data based off of their filter prfrences.
 
-### `npm start`
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+### Time To Complete
 
-### `npm test`
+| Component | Priority | Estimated Time | Time Invetsted | Actual Time |
+| --- | :---: |  :---: | :---: | :---: |
+| Basic Styling | H | 4hrs| 8 | 8 |
+| Working with API | H | 4hrs| 5 | 5 |
+| Building Component Tree | H | 3hrs | 3 | 3 |
+| Working page updates | H | 3 hrs | 2 | 2 |
+| Writing Filter Code | H | 3hrs | 3 | 3 |
+| MK2 styling | H | 4hrs | 2 | 3 |
+| Basic animations | H | 3hrs | 1 | 1 |
+| Total | H | 24hrs | 25 | 25 |
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+### Wire Frame
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+![Image of Full Site](https://res.cloudinary.com/drdk7a56d/image/upload/v1569940125/Screen_Shot_2019-10-01_at_9.10.47_AM_ysghni.png)
 
-### `npm run eject`
+![Image of Mobile Site](https://res.cloudinary.com/drdk7a56d/image/upload/v1569940129/Screen_Shot_2019-10-01_at_9.10.59_AM_l2s7n1.png)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### MVP
+- the app will display a list of stories to a landing page based on API return data
+- the user will be able to filter and search for diffrent typs of social media such as videos, tweet or reddit posts
+- the app will have a mobile first responsive design
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+### Post MVP
+- Add a news api to allow for news and social feed
+- Be able to allow users to save prefrences based in local storage
+- Add react-spring and react overdrive for animations and better styling
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
+### React Component Hierarchy
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+![Component Tree](https://res.cloudinary.com/drdk7a56d/image/upload/v1569940131/Screen_Shot_2019-10-01_at_10.11.35_AM_aibmvb.png)
 
-### Code Splitting
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
 
-### Analyzing the Bundle Size
+### API Snippet
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+```JSON
+{
+  "kind": "youtube#searchListResponse",
+  "etag": "\"p4VTdlkQv3HQeTEaXgvLePAydmU/_RVMLF-zWQ3W8zB_wX2kw1vu0ZU\"",
+  "nextPageToken": "CBkQAA",
+  "regionCode": "US",
+  "pageInfo": {
+    "totalResults": 1000000,
+    "resultsPerPage": 25
+  },
+  
+```
 
-### Making a Progressive Web App
+### Functional Components
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+| Component | Description | 
+| --- | :---: |  
+| Header | Houses nav and search |
+| Search Input | takes user input and will fire new requests for data, this response will change the story list to reflect the changes |
+| Link | Misc links to move through the site or to outside site|
+| Story List | A list of Stories |
+| Story | Either a Reddit, Youtube, or twitter post |
+| Story Image | Iframe or image from story |
+| Story Data | Hold text from the story |
 
-### Advanced Configuration
+### Additional Libraries
+- font-awesome
+- Materialize
+- Axios
+- react-spring
+- react overdrive
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
 
-### Deployment
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+### Change Log
+- Removed twitter from project
