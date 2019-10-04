@@ -1,4 +1,5 @@
 import React from 'react'
+import { useSpring, animated } from 'react-spring'
 import { makeStyles } from '@material-ui/core/styles'
 import Avatar from '@material-ui/core/Avatar'
 import Paper from '@material-ui/core/Paper'
@@ -34,6 +35,7 @@ const useStyles = makeStyles({
 })
 
 const Reddit = ({ item }) => {
+  const fade = useSpring({ opacity: 1, from: { opacity: 0 } })
   const { data } = item;
 
   const {
@@ -63,13 +65,15 @@ const Reddit = ({ item }) => {
   const renderIfThere = () => {
     if (public_description && header_title && display_name_prefixed) {
       return (
-        < Paper className={classes.paper} >
-          <a className={classes.link} href={`https://reddit.com/${display_name_prefixed}`}>
-            <Avatar className={classes.avatar} src={avatar()} />
-            <Typography className={classes.heading} variant='h5' component='h5'>{cutHeader(header_title)}</Typography>
-            <Typography className={classes.para} component='p'>{cutStringLength(public_description)}</Typography>
-          </a>
-        </Paper >
+        <animated.div style={fade}>
+          < Paper className={classes.paper} >
+            <a className={classes.link} href={`https://reddit.com/${display_name_prefixed}`}>
+              <Avatar className={classes.avatar} src={avatar()} />
+              <Typography className={classes.heading} variant='h5' component='h5'>{cutHeader(header_title)}</Typography>
+              <Typography className={classes.para} component='p'>{cutStringLength(public_description)}</Typography>
+            </a>
+          </Paper >
+        </animated.div>
       )
     }
   }

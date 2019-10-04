@@ -9,7 +9,7 @@ import { makeStyles } from '@material-ui/core/styles';
 const useStyles = makeStyles({
   drawer: {
     zIndex: '1',
-    top: '80px',
+    top: '85px',
     background: '#333333',
     width: '200px',
     color: '#FFFC31',

@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useSpring, animated } from 'react-spring'
 import { makeStyles, withStyles } from '@material-ui/styles'
 import YouTube from 'react-youtube';
 import CircularProgress from '@material-ui/core/CircularProgress';
@@ -16,6 +17,7 @@ const opts = {
 }
 
 const Video = ({ video }) => {
+  const fade = useSpring({ opacity: 1, from: { opacity: 0 } })
   const [show, setShow] = useState(['0', 'none'])
   const [display, setDisplay] = useState(['1', 'flex'])
 
@@ -54,10 +56,14 @@ const Video = ({ video }) => {
 
   return (
     <>
-      <YouTube className={classes.video} id={`vid-${video.id.videoId}`} onReady={showVideo} videoId={video.id.videoId} opts={opts} />
-      <div className={classes.loader} id={`loader-${video.id.videoId}`}>
-        <ColorProgress />
-      </div>
+      <animated.div style={fade}>
+        <YouTube className={classes.video} id={`vid-${video.id.videoId}`} onReady={showVideo} videoId={video.id.videoId} opts={opts} />
+      </animated.div>
+      <animated.div style={fade}>
+        <div className={classes.loader} id={`loader-${video.id.videoId}`}>
+          <ColorProgress />
+        </div>
+      </animated.div>
     </>
   )
 }

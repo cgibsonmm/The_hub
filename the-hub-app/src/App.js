@@ -112,6 +112,12 @@ function App() {
     setCurrentRedditUrl(`${RedditUrl}trending${ageGate}`);
   };
 
+  const sports = () => {
+    setCurrentNewsUrl(`${newsUrl}sports${NEWSKEY}`)
+    setCurrentYTUrl(`${youTubeUrl}sports${KEY2}`)
+    setCurrentRedditUrl(`${RedditUrl}sports${ageGate}`);
+  }
+
   const fetchSearch = (slug) => {
     setCurrentNewsUrl(`${newsUrl}${slug}${NEWSKEY}`)
     setCurrentYTUrl(`${youTubeUrl}${slug}${KEY2}`)
@@ -152,6 +158,14 @@ function App() {
           path="/trending"
           render={() => {
             trending();
+            return <Main redditRes={redditRes} youtubeRes={youtubeRes} zipData={zipData} />;
+          }}
+        />
+        <Route
+          exact
+          path="/Sports"
+          render={() => {
+            sports();
             return <Main redditRes={redditRes} youtubeRes={youtubeRes} zipData={zipData} />;
           }}
         />

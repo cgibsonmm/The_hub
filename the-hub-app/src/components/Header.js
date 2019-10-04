@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useSpring, animated } from 'react-spring'
 import LinkList from './LinkList'
 import Typography from '@material-ui/core/Typography'
 import { Link, useHistory } from 'react-router-dom';
@@ -16,7 +17,7 @@ import IconButton from '@material-ui/core/IconButton'
 import MenuIcon from '@material-ui/icons/Menu'
 import Drawer from '@material-ui/core/Drawer';
 
-const useStyles = makeStyles(theme => ({
+const useStyles = makeStyles({
   root: {
     flexGrow: 1,
     position: 'fixed',
@@ -56,10 +57,11 @@ const useStyles = makeStyles(theme => ({
     },
   },
 
-}))
+})
 
 
 const Header = () => {
+  const fadeDip = useSpring({ opacity: 1, from: { opacity: 0 } })
   const classes = useStyles();
 
   const [input, setInput] = useState('')
@@ -91,9 +93,11 @@ const Header = () => {
     <header className={classes.root}>
       <AppBar position='static'>
         <Toolbar className={classes.nav} >
-          <Link to='/' className={classes.text}>
-            <Typography variant='h2'>The Hub</Typography>
-          </Link>
+          <animated.div style={fadeDip}>
+            <Link to='/' className={classes.text}>
+              <Typography variant='h2' fontWeight={700}>The Hub</Typography>
+            </Link>
+          </animated.div>
 
           <Hidden smDown>
             <form only="mdDown" onSubmit={handleSubmit}>

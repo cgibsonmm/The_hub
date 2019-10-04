@@ -1,4 +1,5 @@
 import React from 'react';
+import { animated, useSpring } from 'react-spring'
 import { makeStyles } from '@material-ui/core/styles'
 import Avatar from '@material-ui/core/Avatar'
 import Box from '@material-ui/core/Box'
@@ -33,6 +34,7 @@ const useStyles = makeStyles({
 })
 
 const News = ({ item }) => {
+  const fade = useSpring({ opacity: 1, from: { opacity: 0 } })
   const useStyles = makeStyles({
     paper: {
       zIndex: '1',
@@ -71,17 +73,19 @@ const News = ({ item }) => {
   console.log(item)
   return (
     <>
-      <Paper className={classes.paper}>
-        <div className={classes.filter}>
-          <a className={classes.link} href={item.url}>
-            <Typography className={classes.heading} component='h5'>
-              <Box fontSize={20}>{item.title}</Box></Typography>
-            <Typography className={classes.para} component='p'>
-              <Box fontSize={14}>{item.description}</Box>
-            </Typography>
-          </a>
-        </div>
-      </Paper>
+      <animated.div style={fade}>
+        <Paper className={classes.paper}>
+          <div className={classes.filter}>
+            <a className={classes.link} href={item.url}>
+              <Typography className={classes.heading} component='h5'>
+                <Box fontSize={20}>{item.title}</Box></Typography>
+              <Typography className={classes.para} component='p'>
+                <Box fontSize={14}>{item.description}</Box>
+              </Typography>
+            </a>
+          </div>
+        </Paper>
+      </animated.div>
     </>
   )
 }
