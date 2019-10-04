@@ -135,12 +135,16 @@ function App() {
     setCurrentRedditUrl(`${redditURL}javascript`);
   };
 
+  const contentFilters = () => {
+    return
+  }
+
 
   return (
 
     <div className="App">
-      <Header theme={theme} />
-      <Sidebar />
+      <Header filterStatus={contentFilters} />
+      <Sidebar filterStatus={contentFilters} />
       <Switch>
         <Route
           exact
