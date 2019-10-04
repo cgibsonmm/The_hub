@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import LinkList from './LinkList'
 import Typography from '@material-ui/core/Typography'
 import { Link, useHistory } from 'react-router-dom';
 import { makeStyles } from '@material-ui/core/styles'
@@ -6,7 +7,7 @@ import AppBar from '@material-ui/core/AppBar'
 import Hidden from '@material-ui/core/Hidden'
 import Toolbar from '@material-ui/core/Toolbar'
 import Button from '@material-ui/core/Button'
-import Input from '@material-ui/core/Input'
+import TextField from '@material-ui/core/TextField'
 import Divider from '@material-ui/core/Divider'
 import List from '@material-ui/core/List'
 import ListItem from '@material-ui/core/ListItem'
@@ -18,8 +19,12 @@ import Drawer from '@material-ui/core/Drawer';
 const useStyles = makeStyles(theme => ({
   root: {
     flexGrow: 1,
+    position: 'fixed',
+    zIndex: '1200',
+    width: '100vw',
   },
   text: {
+    margin: '10px 3px',
     color: 'rgba(255, 252, 49, 1)',
     textDecoration: 'none',
     '&:hover': {
@@ -42,8 +47,14 @@ const useStyles = makeStyles(theme => ({
     margin: '20px',
     width: '100%',
     display: 'flex',
-    justifyContent: 'center'
-  }
+    justifyContent: 'center',
+  },
+  drawer: {
+    backgroundColor: '#373F51',
+    '&label.Mui-focused': {
+      color: 'green',
+    },
+  },
 
 }))
 
@@ -60,6 +71,7 @@ const Header = () => {
     e.preventDefault()
     history.push(`/search/${input}`)
     e.target.reset()
+    toggleClose()
   }
 
   const handleChange = (e) => {
@@ -85,7 +97,14 @@ const Header = () => {
 
           <Hidden smDown>
             <form only="mdDown" onSubmit={handleSubmit}>
-              <Input onChange={handleChange} onClick={e => e.stopPropagation()} placeholder='search' />
+              <TextField
+                className={classes.input}
+                label="Search"
+                onChange={handleChange}
+                onClick={e => e.stopPropagation()}
+                placeholder='search'
+                variant="outlined"
+              />
               <Button className={classes.button} variant="contained" type="submit">Search</Button>
             </form>
           </Hidden>
@@ -93,15 +112,24 @@ const Header = () => {
             <IconButton onClick={handleClick} edge="end" className={classes.menuButton} color="inherit" aria-label="menu">
               <MenuIcon />
             </IconButton>
-            <Drawer anchor='top' open={isActive} onClose={toggleClose}>
-              <List>
-                <ListItem button>
-                  <Link to='/trending'><ListItemText primary="Trending" /></Link>
-                </ListItem>
-              </List>
+            <Drawer
+              classes={{ paper: classes.drawer }}
+              anchor='top'
+              open={isActive}
+              onClose={toggleClose}
+            >
+              <LinkList />
               <Divider />
               <form className={classes.dropDown} onSubmit={handleSubmit}>
-                <Input onChange={handleChange} onClick={e => e.stopPropagation()} placeholder='search' />
+                <TextField
+                  className={classes.input}
+                  label='Search'
+                  onChange={handleChange}
+                  onClick={e => e.stopPropagation()}
+                  placeholder='search'
+                  variant="outlined"
+
+                />
                 <Button className={classes.button} variant="contained" type="submit">Search</Button>
               </form>
             </Drawer>

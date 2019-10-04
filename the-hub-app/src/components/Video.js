@@ -8,6 +8,7 @@ import '../css/Video.css'
 const opts = {
   height: '200',
   width: '400',
+  borderRadius: '8',
   playerVars: { // https://developers.google.com/youtube/player_parameters
     autoplay: 0,
   }
@@ -15,11 +16,11 @@ const opts = {
 
 const Video = ({ video }) => {
   const [show, setShow] = useState(['0', 'none'])
-  const [display, setDisplay] = useState(['1', 'block'])
+  const [display, setDisplay] = useState(['1', 'flex'])
 
   const showVideo = () => {
-    setShow(['1', 'block'])
     setDisplay(['0', 'none'])
+    setShow(['1', 'flex'])
   }
   const useStyles = makeStyles({
     video: {
@@ -30,7 +31,10 @@ const Video = ({ video }) => {
       display: display[1],
       height: '200px',
       width: '400px',
-      backgroundColor: '#FFFFFF',
+      margin: '10px',
+      backgroundColor: '#373F51',
+      justifyContent: 'center',
+      alignItems: 'center'
     }
   })
 
@@ -39,7 +43,7 @@ const Video = ({ video }) => {
   return (
     <>
       <YouTube className={classes.video} id={`vid-${video.id.videoId}`} onReady={showVideo} videoId={video.id.videoId} opts={opts} />
-      {/* <div className={classes.loader} id={`loader-${video.id.videoId}`}>loading</div> */}
+      <div className={classes.loader} id={`loader-${video.id.videoId}`}>loading</div>
     </>
   )
 }

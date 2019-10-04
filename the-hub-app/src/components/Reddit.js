@@ -16,7 +16,6 @@ const useStyles = makeStyles({
     backgroundColor: '#373F51',
     color: '#FFFC31',
     textAlign: 'center',
-    padding: '4px',
   },
   link: {
     color: '#FFFC31',
@@ -28,7 +27,6 @@ const useStyles = makeStyles({
 })
 
 const Reddit = ({ item }) => {
-  // const filter = new Filter
   const { data } = item;
 
   const {

@@ -97,6 +97,7 @@ function App() {
 
     <div className="App">
       <Header theme={theme} />
+      <Sidebar />
       <Switch>
         <Route
           exact
