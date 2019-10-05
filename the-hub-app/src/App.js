@@ -81,12 +81,12 @@ function App() {
     }).catch((e) => console.log(e.message));
   }, [currentRedditUrl]);
 
-  // useEffect(() => {
-  //   Axios.get(currentYTUrl).then(res => {
-  //     setYoutubeRes(filterYouTubeRes(res.data.items))
-  //   }).catch(e => console.log(e.message)
-  //   )
-  // }, [currentYTUrl])
+  useEffect(() => {
+    Axios.get(currentYTUrl).then(res => {
+      setYoutubeRes(filterYouTubeRes(res.data.items))
+    }).catch(e => console.log(e.message)
+    )
+  }, [currentYTUrl])
 
 
   /// Last Resort if run out of youtube requests!
@@ -97,15 +97,15 @@ function App() {
   //   }).catch((e) => console.log(e.message));
   // }, [currentYTUrl]);
 
-  // useEffect(() => {
-  //   Axios.get(currentNewsUrl).then(res => {
-  //     let newsD = res.data.articles.map(item => {
-  //       let pair = { type: 'NEWS' }
-  //       return { ...item, ...pair }
-  //     })
-  //     setNewsRes(newsD)
-  //   })
-  // }, [currentNewsUrl])
+  useEffect(() => {
+    Axios.get(currentNewsUrl).then(res => {
+      let newsD = res.data.articles.map(item => {
+        let pair = { type: 'NEWS' }
+        return { ...item, ...pair }
+      })
+      setNewsRes(newsD)
+    })
+  }, [currentNewsUrl])
 
   useEffect(() => {
     const zipper = (_.zip(youtubeRes, redditRes, newsRes).flat());
