@@ -9,6 +9,8 @@ import './App.css';
 import Axios from 'axios';
 import Preferences from './components/Preferences';
 
+var swearjar = require('swearjar')
+
 const _ = require('lodash');
 
 const theme = createMuiTheme({
@@ -60,19 +62,31 @@ function App() {
 
   const [zipData, setZipData] = useState([]);
 
+
+  const redditWash = (obj) => {
+    obj.data.children.forEach(item => {
+      return item.data.public_description = swearjar.censor(item.data.public_description)
+    })
+    obj.data.children.forEach(item => {
+      return item.data.header_title = swearjar.censor(item.data.header_title)
+    })
+
+    return obj
+  }
+
   useEffect(() => {
     Axios.get(currentRedditUrl).then((res) => {
-
-      setRedditRes(filterRedditRes(res.data.data.children));
+      let cleanData = redditWash(res.data)
+      setRedditRes(cleanData.data.children)
     }).catch((e) => console.log(e.message));
   }, [currentRedditUrl]);
 
-  useEffect(() => {
-    Axios.get(currentYTUrl).then(res => {
-      setYoutubeRes(filterYouTubeRes(res.data.items))
-    }).catch(e => console.log(e.message)
-    )
-  }, [currentYTUrl])
+  // useEffect(() => {
+  //   Axios.get(currentYTUrl).then(res => {
+  //     setYoutubeRes(filterYouTubeRes(res.data.items))
+  //   }).catch(e => console.log(e.message)
+  //   )
+  // }, [currentYTUrl])
 
 
   /// Last Resort if run out of youtube requests!
@@ -83,15 +97,15 @@ function App() {
   //   }).catch((e) => console.log(e.message));
   // }, [currentYTUrl]);
 
-  useEffect(() => {
-    Axios.get(currentNewsUrl).then(res => {
-      let newsD = res.data.articles.map(item => {
-        let pair = { type: 'NEWS' }
-        return { ...item, ...pair }
-      })
-      setNewsRes(newsD)
-    })
-  }, [currentNewsUrl])
+  // useEffect(() => {
+  //   Axios.get(currentNewsUrl).then(res => {
+  //     let newsD = res.data.articles.map(item => {
+  //       let pair = { type: 'NEWS' }
+  //       return { ...item, ...pair }
+  //     })
+  //     setNewsRes(newsD)
+  //   })
+  // }, [currentNewsUrl])
 
   useEffect(() => {
     const zipper = (_.zip(youtubeRes, redditRes, newsRes).flat());
